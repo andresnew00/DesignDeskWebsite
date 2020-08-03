@@ -1,0 +1,62 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ebebeb;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-wrapper .logo {
+  width: 8em;
+}
+
+.navbar-wrapper svg {
+  width: auto;
+}
+
+.navbar-wrapper .phoneNburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-wrapper .phoneNburger .phoneNumber {
+  padding-top: 0.9em;
+  padding-right: 0.5em;
+}
+
+.navbar-wrapper .phoneNburger img {
+  width: 3em;
+}
+
+.hero-wrapper .shape1-wrapper {
+  position: absolute;
+  z-index: -1;
+  width: 10em;
+}
+
+.hero-wrapper .svg {
+  width: auto;
+}
+
+.hero-wrapper .rectangle {
+  width: 16em;
+  height: 179px;
+  border: 2px solid #155263;
+}
+/*# sourceMappingURL=App.css.map */

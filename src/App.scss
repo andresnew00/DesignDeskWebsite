@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(235, 235, 235);
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  .logo {
+    width: 8em;
+  }
+  svg {
+    width: auto;
+  }
+  .phoneNburger {
+    display: flex;
+    .phoneNumber {
+      padding-top: 0.9em;
+      padding-right: 0.5em;
+    }
+    img {
+      width: 3em;
+    }
+  }
+}
+
+.hero-wrapper {
+  .shape1-wrapper {
+    position: absolute;
+    z-index: -1;
+    width: 10em;
+  }
+  .svg {
+    width: auto;
+  }
+  .rectangle {
+    width: 16em;
+    height: 179px;
+    border: 2px solid #155263;
+  }
+}
