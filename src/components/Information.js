@@ -20,8 +20,8 @@ function Information() {
             <h1>Coming soon</h1>
             <button>CONTACT US</button>
           </div>
+          <div className="bottom-blue-rectangle"></div>
         </div>
-        <div className="bottom-blue-rectangle"></div>
       </div>
     </div>
   );

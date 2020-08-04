@@ -6,26 +6,28 @@ import { ReactComponent as InstagramLogo } from "../assets/instagram-icon.svg";
 function Footer() {
   return (
     <div className="footer-wrapper">
-      <div className="logo">
-        <Logo />
-      </div>
-      <ul>
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>About </a>
-        </li>
-        <li>
-          <a>Contact Us</a>
-        </li>
-      </ul>
-      <div className="social-media-logos">
-        <div className="facebook">
-          <FacebookLogo />
+      <div className="top-container">
+        <div className="logo">
+          <Logo />
         </div>
-        <div className="instagram">
-          <InstagramLogo />
+        <ul>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>About </a>
+          </li>
+          <li>
+            <a>Contact Us</a>
+          </li>
+        </ul>
+        <div className="social-media-logos">
+          <div className="facebook">
+            <FacebookLogo />
+          </div>
+          <div className="instagram">
+            <InstagramLogo />
+          </div>
         </div>
       </div>
       <div className="copyright">

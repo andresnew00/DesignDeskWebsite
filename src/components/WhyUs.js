@@ -12,8 +12,9 @@ function WhyUs() {
             rem perferendis quia excepturi assumenda beatae soluta recusandae
             qui quam!
           </p>
+          <div className="bottom-blue-rectangle"></div>
         </div>
-        <div className="bottom-blue-rectangle"></div>
+        
       </div>
       <div className="computer-girls-img">
         <ComputerGirls />

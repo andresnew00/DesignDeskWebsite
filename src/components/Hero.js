@@ -11,13 +11,12 @@ function Hero() {
           <ShapeOne />
         </div>
         <div className="square-text">
-          <div className="rectangle">
-          </div>
+          <div className="rectangle"></div>
           <p className="rectangle-text">
-            Website Design that leaves a lasting impression
+            Website Design that leaves a lasting <br></br> impression.
           </p>
         </div>
-        <h1 className="main-text">Creative and Practical.</h1>
+        <h1 className="main-text">Creative and <br></br> Practical.</h1>
         <div className="shape2-wrapper">
           <ShapeTwo />
         </div>

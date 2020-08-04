@@ -25,15 +25,13 @@ body {
   .logo {
     width: 8em;
   }
-  svg {
-    width: auto;
-  }
   .phoneNburger {
     display: flex;
     margin-top: 0.5em;
     .phoneNumber {
-      padding-top: 0.5em;
+      padding-top: 0.1em;
       padding-right: 0.5em;
+      font-size: 1.5em;
     }
     .burgerMenu {
       width: 3em;
@@ -42,75 +40,94 @@ body {
 }
 
 .hero-wrapper {
-  max-width: 1200px;
-  margin: 1em;
   display: flex;
   flex-direction: column;
-  svg {
-    width: auto;
-  }
+  position: relative;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1200px;
   .main-text {
-    margin-top: 1em;
+    margin-top: 2em;
+    font-size: 42px;
+    font-weight: 600;
   }
-  .rectangle-text {
-    text-align: right;
-    margin-top: 3em;
-    font-weight: 500;
-  }
-  .rectangle {
-    width: 10em;
-    height: 5em;
-    border: 2px solid #155263;
-    position: absolute;
-    top: 8em;
-    left: 10em;
+  .square-text {
+    right: 0em;
+    .rectangle-text {
+      text-align: right;
+      margin-top: 1.5em;
+      margin-right: 0.2em;
+      font-weight: 500;
+      font-size: 17.5px;
+    }
+    .rectangle {
+      max-width: 10em;
+      min-width: 11.2em;
+      height: 5em;
+      border: 2px solid #155263;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      z-index: -1;
+    }
   }
   .shape1-wrapper {
-    position: absolute;
     z-index: -1;
-    width: 10em;
-    top: -1.5em;
-    left: 2em;
+    top: -7em;
+    // Center absolute item on page
+    position: absolute;
+    width: 40vw;
+    max-width: 20em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .shape2-wrapper {
     position: absolute;
     z-index: -1;
-    width: 15em;
-    top: 10em;
-    right: -5em;
+    width: 50vw;
+    max-width: 22em;
+    top: 2em;
+    right: -1em;
+    z-index: -5;
   }
   .shape3-wrapper {
     position: absolute;
     z-index: -1;
-    width: 10em;
-    top: 15em;
-    left: 0em;
+    width: 60vw;
+    max-width: 20em;
+    top: 7em;
+    left: -1em;
   }
 }
 
 .why-wrapper {
   max-width: 1200px;
-  margin: 1em;
+  margin: 0 auto;
+  padding: 1em;
   display: flex;
   flex-direction: column;
+  // Rectangles on top of each other
   .rectangle-container {
     position: relative;
-    width: 22em;
-    height: 16em;
-    margin-bottom: 3em;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-bottom: 22em;
   }
   .top-white-rectangle {
     background-color: white;
     box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
     padding: 1em;
     border-radius: 20px;
-    z-index: 9;
     margin-top: 20px;
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     position: absolute;
     top: 0;
-    eft: 0;
+    left: 0;
     h2 {
       font-weight: 500;
     }
@@ -119,30 +136,31 @@ body {
       font-style: normal;
       line-height: 1.5em;
     }
+    .bottom-blue-rectangle {
+      position: absolute;
+      background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
+      box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
+      border-radius: 20px;
+      top: 2em;
+      left: 2em;
+      width: 100%;
+      height: 100%;
+      z-index: -5;
+    }
   }
-  .bottom-blue-rectangle {
-    position: absolute;
-    background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
-    margin: 2em 1.5em 1.5em 1.5em;
-    border-radius: 20px;
-    width: inherit;
-    height: inherit;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+
   .computer-girls-img {
     width: 20em;
-    margin-left: 5em;
+    align-self: flex-end;
   }
 }
 
 .skills-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
   h3 {
     text-align: center;
     font-style: normal;
@@ -153,6 +171,7 @@ body {
     flex-direction: column;
     .pcguy {
       width: 24em;
+      align-self: center;
     }
     h2 {
       text-align: center;
@@ -164,7 +183,7 @@ body {
     flex-direction: column;
     .girlOnPc {
       width: 20em;
-      margin-left: 2em;
+      align-self: center;
     }
     h2 {
       text-align: center;
@@ -175,6 +194,7 @@ body {
     flex-direction: column;
     .guySEO {
       width: 24em;
+      align-self: center;
     }
     h2 {
       text-align: center;
@@ -185,6 +205,9 @@ body {
 .testimonials-wrapper {
   background-color: #ffbe55;
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
   .open-quote,
   .closing-quote {
     width: 1em;
@@ -196,7 +219,7 @@ body {
     color: rgba(0, 0, 0, 0.53);
   }
   .closing-quote {
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
   .testimonial-section {
     margin: 1em;
@@ -223,45 +246,54 @@ body {
 .information-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
   .coffee-guys {
     width: 20em;
     margin-left: -1em;
   }
+
   .rectangle-container {
     position: relative;
-    width: 22em;
-    height: 26em;
-    margin-bottom: 3em;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-bottom: 25em;
+    align-self: center;
   }
   .info-rectangle {
     background-color: white;
     box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
-    padding: 0.5em;
+    padding: 1em 1em 1.5em;
     border-radius: 20px;
-    z-index: 9;
     margin-top: 20px;
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
     top: 0;
-    eft: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     .left-side,
     .right-side {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
       h3 {
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
+        margin: 0.5em;
       }
       h1 {
+        margin: 0;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 0.9em;
       }
       .phoneNumber {
-        font-size: 30px;
-        margin-left: 1em;
+        font-size: 1.2em;
       }
       button {
         background-color: #ff9431;
@@ -276,57 +308,135 @@ body {
         text-align: center;
       }
     }
-  }
-  .bottom-blue-rectangle {
-    position: absolute;
-    background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
-    margin: 2em 1.5em 1.5em 1.5em;
-    border-radius: 20px;
-    width: inherit;
-    height: inherit;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    .bottom-blue-rectangle {
+      position: absolute;
+      background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
+      box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
+      border-radius: 20px;
+      top: 1em;
+      left: 0.7em;
+      width: 100%;
+      height: 100%;
+      z-index: -5;
+    }
   }
 }
 
 .footer-wrapper {
   background: linear-gradient(100.96deg, #155263 12.3%, #23849f 97.18%);
   bottom: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1em;
   display: flex;
   flex-direction: column;
-  .logo {
-    width: 15em;
-    align-self: center;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .top-container {
     display: flex;
-    margin: 1em;
-    align-self: center;
-    a {
-      padding: 0.6em;
-      font-size: 20px;
-      border-left: 2px black;
+    flex-direction: column;
+    .logo {
+      min-width: 10em;
+      max-width: 15em;
+      align-self: center;
     }
-  }
-  .social-media-logos {
-    display: flex;
-    align-self: center;
-    .facebook {
-      width: 8em;
-      margin-right: 1em;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin: 1em;
+      align-self: center;
+      a {
+        padding: 0.6em;
+        font-size: 20px;
+        border-left: 2px black;
+      }
     }
-    .instagram {
-      width: 7.8em;
+    .social-media-logos {
+      display: flex;
+      align-self: center;
+      .facebook {
+        width: 8em;
+        margin-right: 1em;
+      }
+      .instagram {
+        width: 7.8em;
+      }
     }
   }
   .copyright {
     align-self: center;
+    font-weight: 100;
+    font-size: .6em;
+  }
+}
+
+@media (min-width: 650px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) {
+  .why-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rectangle-container {
+    width: 60%;
+  }
+  .computer-girls-img {
+    width: 20em;
+    margin-left: 5em;
+  }
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .webdesign-skill {
+      width: 20em;
+    }
+    .girlOnPc {
+      width: 18em;
+    }
+    .guySEO {
+      width: 20em;
+    }
+  }
+  .footer-wrapper {
+    .top-container {
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      .social-media-logos {
+        .facebook {
+          width: 2em;
+        }
+        .instagram {
+          width: 1.95em;
+        }
+      }
+    }
+    .copyright {
+      align-self: center;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .information-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+    .rectangle-container {
+      margin-bottom: 0em;
+      margin-left: 2em;
+      align-self: initial;
+    }
+    .info-rectangle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
 }

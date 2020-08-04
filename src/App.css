@@ -33,10 +33,6 @@ body {
   width: 8em;
 }
 
-.navbar-wrapper svg {
-  width: auto;
-}
-
 .navbar-wrapper .phoneNburger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,8 +41,9 @@ body {
 }
 
 .navbar-wrapper .phoneNburger .phoneNumber {
-  padding-top: 0.5em;
+  padding-top: 0.1em;
   padding-right: 0.5em;
+  font-size: 1.5em;
 }
 
 .navbar-wrapper .phoneNburger .burgerMenu {
@@ -54,8 +51,6 @@ body {
 }
 
 .hero-wrapper {
-  max-width: 1200px;
-  margin: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,58 +58,76 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.hero-wrapper svg {
-  width: auto;
+  position: relative;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1200px;
 }
 
 .hero-wrapper .main-text {
-  margin-top: 1em;
+  margin-top: 2em;
+  font-size: 42px;
+  font-weight: 600;
 }
 
-.hero-wrapper .rectangle-text {
+.hero-wrapper .square-text {
+  right: 0em;
+}
+
+.hero-wrapper .square-text .rectangle-text {
   text-align: right;
-  margin-top: 3em;
+  margin-top: 1.5em;
+  margin-right: 0.2em;
   font-weight: 500;
+  font-size: 17.5px;
 }
 
-.hero-wrapper .rectangle {
-  width: 10em;
+.hero-wrapper .square-text .rectangle {
+  max-width: 10em;
+  min-width: 11.2em;
   height: 5em;
   border: 2px solid #155263;
   position: absolute;
-  top: 8em;
-  left: 10em;
+  top: 1em;
+  right: 1em;
+  z-index: -1;
 }
 
 .hero-wrapper .shape1-wrapper {
-  position: absolute;
   z-index: -1;
-  width: 10em;
-  top: -1.5em;
-  left: 2em;
+  top: -7em;
+  position: absolute;
+  width: 40vw;
+  max-width: 20em;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-wrapper .shape2-wrapper {
   position: absolute;
   z-index: -1;
-  width: 15em;
-  top: 10em;
-  right: -5em;
+  width: 50vw;
+  max-width: 22em;
+  top: 2em;
+  right: -1em;
+  z-index: -5;
 }
 
 .hero-wrapper .shape3-wrapper {
   position: absolute;
   z-index: -1;
-  width: 10em;
-  top: 15em;
-  left: 0em;
+  width: 60vw;
+  max-width: 20em;
+  top: 7em;
+  left: -1em;
 }
 
 .why-wrapper {
   max-width: 1200px;
-  margin: 1em;
+  margin: 0 auto;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,9 +139,10 @@ body {
 
 .why-wrapper .rectangle-container {
   position: relative;
-  width: 22em;
-  height: 16em;
-  margin-bottom: 3em;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-bottom: 22em;
 }
 
 .why-wrapper .top-white-rectangle {
@@ -137,13 +151,13 @@ body {
           box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
   padding: 1em;
   border-radius: 20px;
-  z-index: 9;
   margin-top: 20px;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
   position: absolute;
   top: 0;
-  eft: 0;
+  left: 0;
 }
 
 .why-wrapper .top-white-rectangle h2 {
@@ -156,24 +170,23 @@ body {
   line-height: 1.5em;
 }
 
-.why-wrapper .bottom-blue-rectangle {
+.why-wrapper .top-white-rectangle .bottom-blue-rectangle {
   position: absolute;
   background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
   -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
           box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
-  margin: 2em 1.5em 1.5em 1.5em;
   border-radius: 20px;
-  width: inherit;
-  height: inherit;
-  top: 0;
-  left: 0;
+  top: 2em;
+  left: 2em;
   width: 100%;
   height: 100%;
+  z-index: -5;
 }
 
 .why-wrapper .computer-girls-img {
   width: 20em;
-  margin-left: 5em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .skills-wrapper {
@@ -184,7 +197,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .skills-wrapper h3 {
@@ -205,6 +220,9 @@ body {
 
 .skills-wrapper .webdesign-skill .pcguy {
   width: 24em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .skills-wrapper .webdesign-skill h2 {
@@ -224,7 +242,9 @@ body {
 
 .skills-wrapper .uiux-skill .girlOnPc {
   width: 20em;
-  margin-left: 2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .skills-wrapper .uiux-skill h2 {
@@ -243,6 +263,9 @@ body {
 
 .skills-wrapper .seo-skill .guySEO {
   width: 24em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .skills-wrapper .seo-skill h2 {
@@ -254,6 +277,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .testimonials-wrapper .open-quote,
@@ -267,7 +293,7 @@ body {
 }
 
 .testimonials-wrapper .closing-quote {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .testimonials-wrapper .testimonial-section {
@@ -302,7 +328,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .information-wrapper .coffee-guys {
@@ -312,24 +340,27 @@ body {
 
 .information-wrapper .rectangle-container {
   position: relative;
-  width: 22em;
-  height: 26em;
-  margin-bottom: 3em;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-bottom: 25em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .information-wrapper .info-rectangle {
   background-color: white;
   -webkit-box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
           box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
-  padding: 0.5em;
+  padding: 1em 1em 1.5em;
   border-radius: 20px;
-  z-index: 9;
   margin-top: 20px;
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   top: 0;
-  eft: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,23 +370,40 @@ body {
           flex-direction: column;
 }
 
+.information-wrapper .info-rectangle .left-side,
+.information-wrapper .info-rectangle .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .information-wrapper .info-rectangle .left-side h3,
 .information-wrapper .info-rectangle .right-side h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
+  margin: 0.5em;
 }
 
 .information-wrapper .info-rectangle .left-side h1,
 .information-wrapper .info-rectangle .right-side h1 {
+  margin: 0;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 0.9em;
 }
 
 .information-wrapper .info-rectangle .left-side .phoneNumber,
 .information-wrapper .info-rectangle .right-side .phoneNumber {
-  font-size: 30px;
-  margin-left: 1em;
+  font-size: 1.2em;
 }
 
 .information-wrapper .info-rectangle .left-side button,
@@ -372,24 +420,24 @@ body {
   text-align: center;
 }
 
-.information-wrapper .bottom-blue-rectangle {
+.information-wrapper .info-rectangle .bottom-blue-rectangle {
   position: absolute;
   background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
   -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
           box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
-  margin: 2em 1.5em 1.5em 1.5em;
   border-radius: 20px;
-  width: inherit;
-  height: inherit;
-  top: 0;
-  left: 0;
+  top: 1em;
+  left: 0.7em;
   width: 100%;
   height: 100%;
+  z-index: -5;
 }
 
 .footer-wrapper {
   background: linear-gradient(100.96deg, #155263 12.3%, #23849f 97.18%);
   bottom: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,14 +448,25 @@ body {
           flex-direction: column;
 }
 
-.footer-wrapper .logo {
-  width: 15em;
+.footer-wrapper .top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-wrapper .top-container .logo {
+  min-width: 10em;
+  max-width: 15em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.footer-wrapper ul {
+.footer-wrapper .top-container ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -419,13 +478,13 @@ body {
       align-self: center;
 }
 
-.footer-wrapper ul a {
+.footer-wrapper .top-container ul a {
   padding: 0.6em;
   font-size: 20px;
   border-left: 2px black;
 }
 
-.footer-wrapper .social-media-logos {
+.footer-wrapper .top-container .social-media-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,12 +492,12 @@ body {
       align-self: center;
 }
 
-.footer-wrapper .social-media-logos .facebook {
+.footer-wrapper .top-container .social-media-logos .facebook {
   width: 8em;
   margin-right: 1em;
 }
 
-.footer-wrapper .social-media-logos .instagram {
+.footer-wrapper .top-container .social-media-logos .instagram {
   width: 7.8em;
 }
 
@@ -446,5 +505,108 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-weight: 100;
+  font-size: .6em;
+}
+
+@media (min-width: 650px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) {
+  .why-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .rectangle-container {
+    width: 60%;
+  }
+  .computer-girls-img {
+    width: 20em;
+    margin-left: 5em;
+  }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills .webdesign-skill {
+    width: 20em;
+  }
+  .skills .girlOnPc {
+    width: 18em;
+  }
+  .skills .guySEO {
+    width: 20em;
+  }
+  .footer-wrapper .top-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .footer-wrapper .top-container .social-media-logos .facebook {
+    width: 2em;
+  }
+  .footer-wrapper .top-container .social-media-logos .instagram {
+    width: 1.95em;
+  }
+  .footer-wrapper .copyright {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 750px) {
+  .information-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .information-wrapper .rectangle-container {
+    margin-bottom: 0em;
+    margin-left: 2em;
+    -ms-flex-item-align: initial;
+        -ms-grid-row-align: initial;
+        align-self: initial;
+  }
+  .information-wrapper .info-rectangle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 /*# sourceMappingURL=App.css.map */
