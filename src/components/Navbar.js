@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../assets/logo.svg";
+import {ReactComponent as Burger} from "../assets/open-menu.svg";
 
 function Navbar() {
   return (
@@ -11,7 +12,7 @@ function Navbar() {
         <div className="phoneNburger">
           <div className="phoneNumber">+1 (678) 338-6427</div>
           <div className="burgerMenu">
-            <img src={require("../assets/open-menu.png")} alt="" />
+            <Burger />
           </div>
         </div>
       </div>

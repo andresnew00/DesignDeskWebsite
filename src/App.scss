@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+  background: none;
+}
+
 body {
   margin: 0;
   background-color: rgb(235, 235, 235);
@@ -22,28 +30,303 @@ body {
   }
   .phoneNburger {
     display: flex;
+    margin-top: 0.5em;
     .phoneNumber {
-      padding-top: 0.9em;
+      padding-top: 0.5em;
       padding-right: 0.5em;
     }
-    img {
+    .burgerMenu {
       width: 3em;
     }
   }
 }
 
 .hero-wrapper {
+  max-width: 1200px;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  svg {
+    width: auto;
+  }
+  .main-text {
+    margin-top: 1em;
+  }
+  .rectangle-text {
+    text-align: right;
+    margin-top: 3em;
+    font-weight: 500;
+  }
+  .rectangle {
+    width: 10em;
+    height: 5em;
+    border: 2px solid #155263;
+    position: absolute;
+    top: 8em;
+    left: 10em;
+  }
   .shape1-wrapper {
     position: absolute;
     z-index: -1;
     width: 10em;
+    top: -1.5em;
+    left: 2em;
   }
-  .svg {
-    width: auto;
+  .shape2-wrapper {
+    position: absolute;
+    z-index: -1;
+    width: 15em;
+    top: 10em;
+    right: -5em;
   }
-  .rectangle {
-    width: 16em;
-    height: 179px;
-    border: 2px solid #155263;
+  .shape3-wrapper {
+    position: absolute;
+    z-index: -1;
+    width: 10em;
+    top: 15em;
+    left: 0em;
+  }
+}
+
+.why-wrapper {
+  max-width: 1200px;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  .rectangle-container {
+    position: relative;
+    width: 22em;
+    height: 16em;
+    margin-bottom: 3em;
+  }
+  .top-white-rectangle {
+    background-color: white;
+    box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
+    padding: 1em;
+    border-radius: 20px;
+    z-index: 9;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    eft: 0;
+    h2 {
+      font-weight: 500;
+    }
+    p {
+      font-weight: 300;
+      font-style: normal;
+      line-height: 1.5em;
+    }
+  }
+  .bottom-blue-rectangle {
+    position: absolute;
+    background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
+    margin: 2em 1.5em 1.5em 1.5em;
+    border-radius: 20px;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .computer-girls-img {
+    width: 20em;
+    margin-left: 5em;
+  }
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  h3 {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .webdesign-skill {
+    display: flex;
+    flex-direction: column;
+    .pcguy {
+      width: 24em;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+  .uiux-skill {
+    display: flex;
+    flex-direction: column;
+    .girlOnPc {
+      width: 20em;
+      margin-left: 2em;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+  .seo-skill {
+    display: flex;
+    flex-direction: column;
+    .guySEO {
+      width: 24em;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.testimonials-wrapper {
+  background-color: #ffbe55;
+  display: flex;
+  .open-quote,
+  .closing-quote {
+    width: 1em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.53);
+  }
+  .closing-quote {
+    margin-top: 1em;
+  }
+  .testimonial-section {
+    margin: 1em;
+  }
+  .testimonial {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.2em;
+    text-align: center;
+  }
+  .author {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+  }
+  .company {
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+.information-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  .coffee-guys {
+    width: 20em;
+    margin-left: -1em;
+  }
+  .rectangle-container {
+    position: relative;
+    width: 22em;
+    height: 26em;
+    margin-bottom: 3em;
+  }
+  .info-rectangle {
+    background-color: white;
+    box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
+    padding: 0.5em;
+    border-radius: 20px;
+    z-index: 9;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    eft: 0;
+    display: flex;
+    flex-direction: column;
+    .left-side,
+    .right-side {
+      h3 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+      }
+      h1 {
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .phoneNumber {
+        font-size: 30px;
+        margin-left: 1em;
+      }
+      button {
+        background-color: #ff9431;
+        border-radius: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 20px;
+        width: 12em;
+        height: 2.5em;
+        letter-spacing: 0.05em;
+        margin-top: 1em;
+        text-align: center;
+      }
+    }
+  }
+  .bottom-blue-rectangle {
+    position: absolute;
+    background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.24);
+    margin: 2em 1.5em 1.5em 1.5em;
+    border-radius: 20px;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer-wrapper {
+  background: linear-gradient(100.96deg, #155263 12.3%, #23849f 97.18%);
+  bottom: 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  .logo {
+    width: 15em;
+    align-self: center;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 1em;
+    align-self: center;
+    a {
+      padding: 0.6em;
+      font-size: 20px;
+      border-left: 2px black;
+    }
+  }
+  .social-media-logos {
+    display: flex;
+    align-self: center;
+    .facebook {
+      width: 8em;
+      margin-right: 1em;
+    }
+    .instagram {
+      width: 7.8em;
+    }
+  }
+  .copyright {
+    align-self: center;
   }
 }
