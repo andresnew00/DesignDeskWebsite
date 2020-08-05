@@ -10,9 +10,9 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/navigation" exact component={Navegation} />
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
+          <Route path={`${process.env.PUBLIC_URL}/`} exact component={Home} />
+          <Route path={`${process.env.PUBLIC_URL}/navigation`} exact component={Navegation} />
+          <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
         </Switch>
       </div>
     </Router>

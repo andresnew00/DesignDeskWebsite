@@ -14,7 +14,7 @@ function Navbar() {
           <div className="phoneNumber">+1 (678) 338-6427</div>
 
           <div className="burgerMenu">
-            <Link to="/navigation">
+            <Link to={`${process.env.PUBLIC_URL}/navigation`}>
               <Burger />
             </Link>
           </div>

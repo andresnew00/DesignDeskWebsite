@@ -10,7 +10,7 @@ export default function Navigation() {
         <div className="logo">
           <Logo />
         </div>
-        <Link to="/">
+        <Link to={`${process.env.PUBLIC_URL}/`}>
         <div className="x-icon">
           <XIcon />
         </div>
@@ -19,13 +19,13 @@ export default function Navigation() {
       <div className="wrapper-bottom">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to={`${process.env.PUBLIC_URL}/`}>Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to={`${process.env.PUBLIC_URL}/about`}>About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to={`${process.env.PUBLIC_URL}/contact`}>Contact Us</Link>
           </li>
         </ul>
       </div>
