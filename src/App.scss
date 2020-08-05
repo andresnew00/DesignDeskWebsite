@@ -16,11 +16,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100%;
 }
 
+// Common Components (Multi-use)
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
@@ -107,6 +109,104 @@ html, body {
   }
 }
 
+.footer-wrapper {
+  background: linear-gradient(100.96deg, #155263 12.3%, #23849f 97.18%);
+  bottom: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    .logo {
+      min-width: 10em;
+      max-width: 15em;
+      align-self: center;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin: 1em;
+      align-self: center;
+      a {
+        padding: 0.6em;
+        font-size: 20px;
+        border-left: 2px black;
+      }
+    }
+    .social-media-logos {
+      display: flex;
+      align-self: center;
+      .facebook {
+        width: 8em;
+        margin-right: 1em;
+      }
+      .instagram {
+        width: 7.8em;
+      }
+    }
+  }
+  .copyright {
+    align-self: center;
+    font-weight: 100;
+    font-size: 0.6em;
+  }
+}
+
+//Navigation
+.Navigation {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 154, 60, 0.9);
+  .wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+    .logo {
+      width: 8em;
+    }
+    .x-icon {
+      width: 3em;
+      align-self: center;
+    }
+  }
+  .wrapper-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 70vh;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 1.5em;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: 300;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+// Home Components
 .why-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -327,54 +427,7 @@ html, body {
   }
 }
 
-.footer-wrapper {
-  background: linear-gradient(100.96deg, #155263 12.3%, #23849f 97.18%);
-  bottom: 0;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  .top-container {
-    display: flex;
-    flex-direction: column;
-    .logo {
-      min-width: 10em;
-      max-width: 15em;
-      align-self: center;
-    }
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      margin: 1em;
-      align-self: center;
-      a {
-        padding: 0.6em;
-        font-size: 20px;
-        border-left: 2px black;
-      }
-    }
-    .social-media-logos {
-      display: flex;
-      align-self: center;
-      .facebook {
-        width: 8em;
-        margin-right: 1em;
-      }
-      .instagram {
-        width: 7.8em;
-      }
-    }
-  }
-  .copyright {
-    align-self: center;
-    font-weight: 100;
-    font-size: 0.6em;
-  }
-}
-
+// Media
 @media (min-width: 650px) {
   body {
     font-size: 18px;

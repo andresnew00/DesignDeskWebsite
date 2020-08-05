@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as Logo } from "../assets/logo.svg";
-import {ReactComponent as Burger} from "../assets/open-menu.svg";
+import { ReactComponent as Burger } from "../assets/open-menu.svg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -11,8 +12,11 @@ function Navbar() {
         </div>
         <div className="phoneNburger">
           <div className="phoneNumber">+1 (678) 338-6427</div>
+
           <div className="burgerMenu">
-            <Burger />
+            <Link to="/navigation">
+              <Burger />
+            </Link>
           </div>
         </div>
       </div>

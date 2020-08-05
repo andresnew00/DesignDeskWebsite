@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 
 function About() {
-    return(
-        <h1>Hello im about</h1>
-    );
+  return (
+    <div className="about">
+      <Navbar />
+      <Hero title="About Us"/>
+      <Footer />
+    </div>
+  );
 }
 
 export default About;
