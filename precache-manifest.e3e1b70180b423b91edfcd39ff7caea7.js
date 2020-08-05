@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "095b8195442454e8521a0e5f805a00b3",
+    "revision": "edc96ecff6029f6f903f1b95422408d0",
     "url": "/DesignDeckWebsite/index.html"
   },
   {
-    "revision": "3d3ea3983f2f6bb3289a",
-    "url": "/DesignDeckWebsite/static/css/main.e918919d.chunk.css"
+    "revision": "ad5fd76d202821700fda",
+    "url": "/DesignDeckWebsite/static/css/main.cbd2b227.chunk.css"
   },
   {
-    "revision": "0847cef42ede8636099e",
-    "url": "/DesignDeckWebsite/static/js/2.aa816ef3.chunk.js"
+    "revision": "0a4c3fbb633e28a576c0",
+    "url": "/DesignDeckWebsite/static/js/2.94188e82.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/DesignDeckWebsite/static/js/2.aa816ef3.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/DesignDeckWebsite/static/js/2.94188e82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3d3ea3983f2f6bb3289a",
-    "url": "/DesignDeckWebsite/static/js/main.c214f3ca.chunk.js"
+    "revision": "ad5fd76d202821700fda",
+    "url": "/DesignDeckWebsite/static/js/main.39d6e0b3.chunk.js"
   },
   {
-    "revision": "7c93ffe9dae2da071498",
-    "url": "/DesignDeckWebsite/static/js/runtime-main.cf8372ac.js"
+    "revision": "43448a4d3509e075677e",
+    "url": "/DesignDeckWebsite/static/js/runtime-main.070fa4e7.js"
   },
   {
     "revision": "8fbed1f415bc1a765538937a94a8bbe2",
@@ -70,5 +70,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "81e74c1f482b6ffd33a220bfc2856219",
     "url": "/DesignDeckWebsite/static/media/shape-top.81e74c1f.svg"
+  },
+  {
+    "revision": "43a429e5ca0a251aef43965bc643f93c",
+    "url": "/DesignDeckWebsite/static/media/x-icon.43a429e5.svg"
   }
 ]);
