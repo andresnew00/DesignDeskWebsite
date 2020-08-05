@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/DesignDeckWebsite/static/css/main.e918919d.chunk.css",
+    "main.js": "/DesignDeckWebsite/static/js/main.c214f3ca.chunk.js",
+    "main.js.map": "/DesignDeckWebsite/static/js/main.c214f3ca.chunk.js.map",
+    "runtime-main.js": "/DesignDeckWebsite/static/js/runtime-main.cf8372ac.js",
+    "runtime-main.js.map": "/DesignDeckWebsite/static/js/runtime-main.cf8372ac.js.map",
+    "static/js/2.aa816ef3.chunk.js": "/DesignDeckWebsite/static/js/2.aa816ef3.chunk.js",
+    "static/js/2.aa816ef3.chunk.js.map": "/DesignDeckWebsite/static/js/2.aa816ef3.chunk.js.map",
+    "index.html": "/DesignDeckWebsite/index.html",
+    "precache-manifest.dfe1eb0c60347297451bab84caf05914.js": "/DesignDeckWebsite/precache-manifest.dfe1eb0c60347297451bab84caf05914.js",
+    "service-worker.js": "/DesignDeckWebsite/service-worker.js",
+    "static/css/main.e918919d.chunk.css.map": "/DesignDeckWebsite/static/css/main.e918919d.chunk.css.map",
+    "static/js/2.aa816ef3.chunk.js.LICENSE.txt": "/DesignDeckWebsite/static/js/2.aa816ef3.chunk.js.LICENSE.txt",
+    "static/media/computer-girls.8fbed1f4.svg": "/DesignDeckWebsite/static/media/computer-girls.8fbed1f4.svg",
+    "static/media/facebook-icon.6cb419fb.svg": "/DesignDeckWebsite/static/media/facebook-icon.6cb419fb.svg",
+    "static/media/girl-on-laptop.7f4fad72.svg": "/DesignDeckWebsite/static/media/girl-on-laptop.7f4fad72.svg",
+    "static/media/guy-on-computer.1355df0d.svg": "/DesignDeckWebsite/static/media/guy-on-computer.1355df0d.svg",
+    "static/media/guy-searching.34df07f0.svg": "/DesignDeckWebsite/static/media/guy-searching.34df07f0.svg",
+    "static/media/guys-coffee.f8c146b1.svg": "/DesignDeckWebsite/static/media/guys-coffee.f8c146b1.svg",
+    "static/media/instagram-icon.034caef7.svg": "/DesignDeckWebsite/static/media/instagram-icon.034caef7.svg",
+    "static/media/logo.536f1079.svg": "/DesignDeckWebsite/static/media/logo.536f1079.svg",
+    "static/media/open-menu.649f68cf.svg": "/DesignDeckWebsite/static/media/open-menu.649f68cf.svg",
+    "static/media/shape-bottom-left.a87be21d.svg": "/DesignDeckWebsite/static/media/shape-bottom-left.a87be21d.svg",
+    "static/media/shape-bottom-right.b3ef35e7.svg": "/DesignDeckWebsite/static/media/shape-bottom-right.b3ef35e7.svg",
+    "static/media/shape-top.81e74c1f.svg": "/DesignDeckWebsite/static/media/shape-top.81e74c1f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf8372ac.js",
+    "static/js/2.aa816ef3.chunk.js",
+    "static/css/main.e918919d.chunk.css",
+    "static/js/main.c214f3ca.chunk.js"
+  ]
+}

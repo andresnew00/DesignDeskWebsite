@@ -3,7 +3,7 @@ import { ReactComponent as ShapeOne } from "../assets/shape-top.svg";
 import { ReactComponent as ShapeTwo } from "../assets/shape-bottom-right.svg";
 import { ReactComponent as ShapeThree } from "../assets/shape-bottom-left.svg";
 
-function Hero() {
+function Hero(props) {
   return (
     <main>
       <div className="hero-wrapper">
@@ -16,7 +16,7 @@ function Hero() {
             Website Design that leaves a lasting <br></br> impression.
           </p>
         </div>
-        <h1 className="main-text">Creative and <br></br> Practical.</h1>
+        <h1 className="main-text">{props.title}</h1>
         <div className="shape2-wrapper">
           <ShapeTwo />
         </div>

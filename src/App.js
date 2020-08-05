@@ -1,24 +1,19 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import WhyUs from './components/WhyUs';
-import Skills from './components/Skills';
-import Testimonials from './components/Testimonials';
-import Information from './components/Information';
-import Footer from './components/Footer';
+import React from "react";
+import "./App.css";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <WhyUs />
-      <Skills />
-      <Testimonials />
-      <Information />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

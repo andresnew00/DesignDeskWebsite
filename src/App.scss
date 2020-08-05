@@ -16,6 +16,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
@@ -27,14 +32,14 @@ body {
   }
   .phoneNburger {
     display: flex;
-    margin-top: 0.5em;
     .phoneNumber {
-      padding-top: 0.1em;
       padding-right: 0.5em;
-      font-size: 1.5em;
+      font-size: 1.1em;
+      align-self: center;
     }
     .burgerMenu {
       width: 3em;
+      align-self: center;
     }
   }
 }
@@ -48,7 +53,7 @@ body {
   max-width: 1200px;
   .main-text {
     margin-top: 2em;
-    font-size: 42px;
+    font-size: 3em;
     font-weight: 600;
   }
   .square-text {
@@ -58,7 +63,7 @@ body {
       margin-top: 1.5em;
       margin-right: 0.2em;
       font-weight: 500;
-      font-size: 17.5px;
+      font-size: 1em;
     }
     .rectangle {
       max-width: 10em;
@@ -366,7 +371,7 @@ body {
   .copyright {
     align-self: center;
     font-weight: 100;
-    font-size: .6em;
+    font-size: 0.6em;
   }
 }
 
