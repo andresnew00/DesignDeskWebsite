@@ -427,6 +427,24 @@ body {
   }
 }
 
+// About Components
+.WhoWeAre {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    .table-team {
+      width: 20em;
+      align-self: center;
+    }
+    .text-section {
+      text-align: center;
+    }
+  }
+}
+
 // Media
 @media (min-width: 650px) {
   body {
@@ -478,6 +496,20 @@ body {
     .copyright {
       align-self: center;
       margin-left: auto;
+    }
+  }
+
+  .WhoWeAre {
+    .wrapper {
+      justify-content: space-evenly;
+      flex-direction: row;
+      .table-team {
+        width: 80em;
+      }
+      .text-section {
+        margin-left: 1em;
+        text-align: left;
+      }
     }
   }
 }

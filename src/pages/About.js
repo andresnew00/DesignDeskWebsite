@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import WhoWeAre from "../components/WhoWeAre";
 import Footer from "../components/Footer";
 
 function About() {
@@ -8,6 +9,7 @@ function About() {
     <div className="about">
       <Navbar />
       <Hero title="About Us"/>
+      <WhoWeAre />
       <Footer />
     </div>
   );

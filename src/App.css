@@ -589,6 +589,30 @@ body {
   z-index: -5;
 }
 
+.WhoWeAre .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.WhoWeAre .wrapper .table-team {
+  width: 20em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.WhoWeAre .wrapper .text-section {
+  text-align: center;
+}
+
 @media (min-width: 650px) {
   body {
     font-size: 18px;
@@ -656,6 +680,22 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
     margin-left: auto;
+  }
+  .WhoWeAre .wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .WhoWeAre .wrapper .table-team {
+    width: 80em;
+  }
+  .WhoWeAre .wrapper .text-section {
+    margin-left: 1em;
+    text-align: left;
   }
 }
 

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "edc96ecff6029f6f903f1b95422408d0",
+    "revision": "855331da949daa09759118ec11452163",
     "url": "/DesignDeckWebsite/index.html"
   },
   {
-    "revision": "ad5fd76d202821700fda",
+    "revision": "6b5cf730bd921432d235",
     "url": "/DesignDeckWebsite/static/css/main.cbd2b227.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DesignDeckWebsite/static/js/2.94188e82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ad5fd76d202821700fda",
-    "url": "/DesignDeckWebsite/static/js/main.39d6e0b3.chunk.js"
+    "revision": "6b5cf730bd921432d235",
+    "url": "/DesignDeckWebsite/static/js/main.346fa8e2.chunk.js"
   },
   {
     "revision": "43448a4d3509e075677e",
