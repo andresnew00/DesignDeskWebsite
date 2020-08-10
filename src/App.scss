@@ -224,7 +224,6 @@ body {
   }
 }
 
-
 //Navigation
 .Navigation {
   position: fixed;
@@ -468,6 +467,74 @@ body {
   }
 }
 
+.form-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  .form-box {
+    background-color: rgb(228, 226, 226);
+    border: 1px solid #b3b3b3;
+    border-radius: 20px;
+    .left-inside {
+      background-color: #ff9431;
+      border-radius: 20px 20px 0px 0px;
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      .triangle-separator {
+        width: 4em;
+        position: absolute;
+        top: 7em;
+        right: 2em;
+        transform: rotate(90deg);
+      }
+      .under-icon {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5em;
+      }
+      .icon-wrapper {
+        width: 5em;
+        align-self: center;
+      }
+    }
+
+    .right-inside {
+      padding: 1em;
+      h2 {
+        font-weight: 300;
+      }
+      textarea {
+        background-color: #d7d7d7;
+        border: 1px solid #b7b7b7;
+        border-radius: 20px;
+        text-align: left;
+        width: 100%;
+      }
+      .message-input {
+        width: 100%;
+        height: 6em;
+      }
+      .name-email {
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        background: linear-gradient(92.93deg, #ff9431 42.4%, #ffe33b 91.88%);
+        border-radius: 10px;
+        width: 100%;
+        height: 2em;
+        font-size: 2em;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
 // Media
 @media (min-width: 650px) {
   body {
@@ -542,6 +609,72 @@ body {
     .conversation-wrapper {
       width: 20em;
       margin-left: 1em;
+    }
+  }
+
+  .form-wrapper {
+    .form-box {
+      display: flex;
+      flex-direction: row;
+      .left-inside {
+        padding-left: 2em;
+        flex-direction: column;
+        width: 30%;
+        border-radius: 20px 0px 0px 20px;
+        .triangle-separator {
+          position: absolute;
+          top: 1em;
+          right: -3em;
+          transform: rotate(0deg);
+        }
+        .under-icon {
+          flex-direction: column;
+          margin-top: 5em;
+        }
+        .icon-wrapper {
+          width: 5em;
+          align-self: start;
+        }
+      }
+
+      .right-inside {
+        margin: 1.5em 3.5em 3.5em 3.5em;
+        padding: 0;
+        width: 60%;
+        h2 {
+          font-weight: 300;
+        }
+        textarea {
+          background-color: #d7d7d7;
+          border: 1px solid #b7b7b7;
+          border-radius: 20px;
+          text-align: left;
+        }
+        .message-input {
+          width: 95%;
+          height: 10em;
+        }
+        .name-email {
+          flex-direction: row;
+          textarea {
+            height: 4em;
+            align-self: center;
+            width: 90%;
+          }
+          .name {
+            width: 50%;
+          }
+          .email {
+            width: 50%;
+          }
+        }
+        .button-wrapper {
+          text-align: center;
+        }
+        button {
+          width: 40%;
+        }
+      }
     }
   }
 }

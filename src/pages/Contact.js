@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import CompanyInfo from '../components/CompanyInfo'
+import HireUsFrom from '../components/HireUsForm'
 
 export default function Contact() {
     return (
@@ -10,6 +11,7 @@ export default function Contact() {
             <Navbar />
             <Hero title="Contact Us" />
             <CompanyInfo />
+            <HireUsFrom />
             <Footer />
         </div>
     );
