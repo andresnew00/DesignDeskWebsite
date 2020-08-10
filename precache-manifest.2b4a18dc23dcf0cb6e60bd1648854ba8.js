@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "855331da949daa09759118ec11452163",
+    "revision": "597e6047a5295fc858d99247ed90d333",
     "url": "/DesignDeckWebsite/index.html"
   },
   {
-    "revision": "6b5cf730bd921432d235",
-    "url": "/DesignDeckWebsite/static/css/main.cbd2b227.chunk.css"
+    "revision": "1b8e5ffcf9f6a7fbfd46",
+    "url": "/DesignDeckWebsite/static/css/main.7cc859eb.chunk.css"
   },
   {
     "revision": "0a4c3fbb633e28a576c0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DesignDeckWebsite/static/js/2.94188e82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6b5cf730bd921432d235",
-    "url": "/DesignDeckWebsite/static/js/main.346fa8e2.chunk.js"
+    "revision": "1b8e5ffcf9f6a7fbfd46",
+    "url": "/DesignDeckWebsite/static/js/main.c14a3655.chunk.js"
   },
   {
     "revision": "43448a4d3509e075677e",
@@ -56,8 +56,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DesignDeckWebsite/static/media/logo.536f1079.svg"
   },
   {
+    "revision": "611d164b1ca43dddb608174f98d9354a",
+    "url": "/DesignDeckWebsite/static/media/mail-icon.611d164b.svg"
+  },
+  {
+    "revision": "5eaf4ead03921b1b156550038c241eef",
+    "url": "/DesignDeckWebsite/static/media/online-conversation.5eaf4ead.svg"
+  },
+  {
     "revision": "649f68cf9028db21b3abee294b299823",
     "url": "/DesignDeckWebsite/static/media/open-menu.649f68cf.svg"
+  },
+  {
+    "revision": "fa1824339c81ce1269ebccde45ffcefb",
+    "url": "/DesignDeckWebsite/static/media/orange-triangle.fa182433.svg"
   },
   {
     "revision": "a87be21d38ea825ec769572e68521327",
@@ -70,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "81e74c1f482b6ffd33a220bfc2856219",
     "url": "/DesignDeckWebsite/static/media/shape-top.81e74c1f.svg"
+  },
+  {
+    "revision": "c906780a618d0af4f80bd9c3cd8195bf",
+    "url": "/DesignDeckWebsite/static/media/team-table.c906780a.svg"
   },
   {
     "revision": "43a429e5ca0a251aef43965bc643f93c",
