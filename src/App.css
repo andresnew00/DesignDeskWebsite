@@ -23,6 +23,34 @@ body {
   max-width: 100%;
 }
 
+.page {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+
+.fade-appear, .fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active, .fade-enter.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms linear 150ms;
+  transition: opacity 200ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
+}
+
 .navbar-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
