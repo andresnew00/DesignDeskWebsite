@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "597e6047a5295fc858d99247ed90d333",
+    "revision": "86893970691ce9f4e7820110c26c32a9",
     "url": "/DesignDeckWebsite/index.html"
   },
   {
-    "revision": "1b8e5ffcf9f6a7fbfd46",
-    "url": "/DesignDeckWebsite/static/css/main.7cc859eb.chunk.css"
+    "revision": "7773a7f55915879ec7bd",
+    "url": "/DesignDeckWebsite/static/css/main.bd2a4a98.chunk.css"
   },
   {
-    "revision": "0a4c3fbb633e28a576c0",
-    "url": "/DesignDeckWebsite/static/js/2.94188e82.chunk.js"
+    "revision": "15088c26fdd47e01b1de",
+    "url": "/DesignDeckWebsite/static/js/2.34e7d5ef.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/DesignDeckWebsite/static/js/2.94188e82.chunk.js.LICENSE.txt"
+    "url": "/DesignDeckWebsite/static/js/2.34e7d5ef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1b8e5ffcf9f6a7fbfd46",
-    "url": "/DesignDeckWebsite/static/js/main.c14a3655.chunk.js"
+    "revision": "7773a7f55915879ec7bd",
+    "url": "/DesignDeckWebsite/static/js/main.e8856875.chunk.js"
   },
   {
     "revision": "43448a4d3509e075677e",

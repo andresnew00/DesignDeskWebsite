@@ -2,13 +2,16 @@ import React from "react";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { ReactComponent as FacebookLogo } from "../assets/facebook-icon.svg";
 import { ReactComponent as InstagramLogo } from "../assets/instagram-icon.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className="footer-wrapper">
       <div className="top-container">
         <div className="logo">
-          <Logo />
+          <Link to={`${process.env.PUBLIC_URL}/`}>
+            <Logo />
+          </Link>
         </div>
         <ul>
           <li>

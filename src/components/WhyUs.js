@@ -5,12 +5,11 @@ function WhyUs() {
     <div className="why-wrapper">
       <div className="rectangle-container">
         <div className="top-white-rectangle">
-          <h2>Why us</h2>
+          <h2>Why us?</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-            laborum rerum hic amet quos natus tempora animi, illo neque totam
-            rem perferendis quia excepturi assumenda beatae soluta recusandae
-            qui quam!
+            At Design Desk we have a passion for developing products that are creative, easy to use, and personal.
+            We work closely with our clients to provide the best balance of user experience and creativity your
+            project can have to show people what your business is all about.
           </p>
           <div className="bottom-blue-rectangle"></div>
         </div>

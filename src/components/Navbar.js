@@ -8,7 +8,9 @@ function Navbar() {
     <header>
       <div className="navbar-wrapper">
         <div className="logo">
-          <Logo />
+          <Link to={`${process.env.PUBLIC_URL}/`}>
+            <Logo />
+          </Link>
         </div>
         <div className="phoneNburger">
           <div className="phoneNumber">+1 (678) 338-6427</div>

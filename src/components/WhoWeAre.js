@@ -11,9 +11,11 @@ export default function WhoWeAre() {
         <div className="text-section">
           <h1>Who are we?</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
-            cum ipsam qui voluptatum illo inventore asperiores eum vero soluta
-            ad dolores fugiat, autem illum nihil culpa error! Itaque, quae quis?
+            We are a group of individuals whose passion is to provide
+            hand-crafted websites which express not only your business but it's
+            personality as well. We work closely with you to provide your
+            clients with a feel of what your business is all about through the
+            design of your page.
           </p>
         </div>
       </div>

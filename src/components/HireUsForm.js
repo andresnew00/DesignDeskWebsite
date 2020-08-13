@@ -12,10 +12,9 @@ export default function HireUsForm() {
           </div>
           <div className="under-icon">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-              obcaecati quam assumenda maxime{" "}
+              If you have any questions or would like to get a quote please send us a message.{" "}
             </p>
-            <p>Shorter text in here</p>
+            <p>We need your email to reach you back</p>
           </div>
           <div className="triangle-separator">
             <Triangle />
