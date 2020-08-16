@@ -36,11 +36,11 @@ export default function HireUsForm() {
                 <input className="input-nameemail" type="email" />
               </div>
             </div>
-            <div className="field">
+            <div className="fieldCaptcha">
               <div data-netlify-recaptcha="true"></div>
             </div>
             <div className="button-wrapper">
-              <button>Send</button>
+              <button type="submit">Send</button>
             </div>
           </form>
         </div>
