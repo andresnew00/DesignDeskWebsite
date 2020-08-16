@@ -1,9 +1,12 @@
 import React from "react";
-import { ReactComponent as Logo } from "../assets/logo.svg";
+import { ReactComponent as Logo } from "../assets/logodark.svg";
 import { ReactComponent as XIcon } from "../assets/x-icon.svg";
 import { Link } from "react-router-dom";
 
-export default function Navigation() {
+export default function Navigation(props) {
+  const Mylocation = props.location.Currentlocation;
+
+  console.warn(JSON.stringify(Mylocation))
   return (
     <div className="Navigation">
       <div className="wrapper-top">

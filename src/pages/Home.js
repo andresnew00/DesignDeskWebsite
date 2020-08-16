@@ -11,11 +11,11 @@ function Home() {
     const message = <div>Creative and <br /> Practical.</div>
   return (
     <div className="App">
-      <Navbar />
+      <Navbar location={"home"}/>
       <Hero title={message}/>
       <WhyUs />
       <Skills />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Information />
       <Footer />
     </div>

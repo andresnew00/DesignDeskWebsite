@@ -30,11 +30,13 @@ body {
   right: 0;
 }
 
-.fade-appear, .fade-enter {
+.fade-appear,
+.fade-enter {
   opacity: 0;
   z-index: 1;
 }
-.fade-appear-active, .fade-enter.fade-enter-active {
+.fade-appear-active,
+.fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 200ms linear 150ms;
 }
@@ -50,11 +52,11 @@ body {
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.8em;
   max-width: 1200px;
   margin: 0 auto;
   .logo {
-    width: 8em;
+    width: 6em;
   }
   .phoneNburger {
     display: flex;
@@ -141,11 +143,12 @@ body {
   padding: 1em;
   display: flex;
   flex-direction: column;
+
   .top-container {
     display: flex;
     flex-direction: column;
     .logo {
-      min-width: 10em;
+      min-width: 8em;
       max-width: 15em;
       align-self: center;
     }
@@ -157,6 +160,9 @@ body {
       margin: 1em;
       align-self: center;
       a {
+        text-decoration: none;
+        color: black;
+        font-weight: 300; 
         padding: 0.6em;
         font-size: 20px;
         border-left: 2px black;
@@ -265,7 +271,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     .logo {
-      width: 8em;
+      width: 6em;
     }
     .x-icon {
       width: 3em;
@@ -532,12 +538,18 @@ body {
       h2 {
         font-weight: 300;
       }
-      textarea {
+      textarea, input {
         background-color: #d7d7d7;
         border: 1px solid #b7b7b7;
         border-radius: 20px;
         text-align: left;
         width: 100%;
+        font-size: 1em;
+        font-family: "Montserrat", sans-serif;
+      }
+      .input-nameemail {
+        width: 90%;
+        height: 2em;
       }
       .message-input {
         width: 100%;

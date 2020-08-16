@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 function About() {
   return (
     <div className="about">
-      <Navbar />
+      <Navbar location={"about"}/>
       <Hero title="About Us"/>
       <WhoWeAre />
       <Footer />

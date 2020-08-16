@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo } from "../assets/logo.svg";
+import { ReactComponent as Logo } from "../assets/logodd.svg";
 import { ReactComponent as FacebookLogo } from "../assets/facebook-icon.svg";
 import { ReactComponent as InstagramLogo } from "../assets/instagram-icon.svg";
 import { Link } from "react-router-dom";
@@ -15,13 +15,19 @@ function Footer() {
         </div>
         <ul>
           <li>
-            <a>Home</a>
+            <Link to={`${process.env.PUBLIC_URL}/`}>
+              Home
+            </Link>
           </li>
           <li>
-            <a>About </a>
+            <Link to={`${process.env.PUBLIC_URL}/about`}>
+              About
+            </Link>
           </li>
           <li>
-            <a>Contact Us</a>
+            <Link to={`${process.env.PUBLIC_URL}/contact`}>
+              Contact Us
+            </Link>
           </li>
         </ul>
         <div className="social-media-logos">

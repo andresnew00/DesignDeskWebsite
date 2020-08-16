@@ -1,9 +1,15 @@
 import React from "react";
-import { ReactComponent as Logo } from "../assets/logo.svg";
+import { ReactComponent as Logo } from "../assets/logodd.svg";
 import { ReactComponent as Burger } from "../assets/open-menu.svg";
 import { Link } from "react-router-dom";
+import Navegation from "../pages/Navigation";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
+  const CurrentlocationInNavbar = props.location;
+
+  // console.log(Currentlocation);
   return (
     <header>
       <div className="navbar-wrapper">
@@ -16,9 +22,26 @@ function Navbar() {
           <div className="phoneNumber">+1 (678) 338-6427</div>
 
           <div className="burgerMenu">
-            <Link to={`${process.env.PUBLIC_URL}/navigation`}>
-              <Burger />
-            </Link>
+            <Route
+              render={({ location }) => (
+                <TransitionGroup>
+                  <CSSTransition
+                    key={location.key}
+                    timeout={300}
+                    classNames="fade"
+                  >
+                    <Link
+                      to={{
+                        pathname: `${process.env.PUBLIC_URL}/navigation`,
+                        Currentlocation: { CurrentlocationInNavbar },
+                      }}
+                    >
+                      <Burger />
+                    </Link>
+                  </CSSTransition>
+                </TransitionGroup>
+              )}
+            />
           </div>
         </div>
       </div>

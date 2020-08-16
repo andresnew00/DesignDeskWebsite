@@ -8,7 +8,7 @@ import HireUsFrom from '../components/HireUsForm'
 export default function Contact() {
     return (
         <div className="Contact">
-            <Navbar />
+            <Navbar location={"contact"}/>
             <Hero title="Contact Us" />
             <CompanyInfo />
             <HireUsFrom />
