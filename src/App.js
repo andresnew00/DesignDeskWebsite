@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Navegation from "./pages/Navigation";
 import Contact from "./pages/Contact";
+import Maintenance from "./pages/Maintenance"
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Maintenance />
         <Route
           render={({ location }) => (
             <TransitionGroup>

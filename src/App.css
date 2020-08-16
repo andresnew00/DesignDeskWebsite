@@ -23,6 +23,34 @@ body {
   max-width: 100%;
 }
 
+.wrapper-maintenance {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 154, 60, 0.9);
+}
+
+.wrapper-maintenance .message {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  font-weight: 400;
+}
+
 .page {
   position: absolute;
   top: 100px;
@@ -746,7 +774,8 @@ body {
   font-weight: 300;
 }
 
-.form-wrapper .form-box .right-inside textarea, .form-wrapper .form-box .right-inside input {
+.form-wrapper .form-box .right-inside textarea,
+.form-wrapper .form-box .right-inside input {
   background-color: #d7d7d7;
   border: 1px solid #b7b7b7;
   border-radius: 20px;
