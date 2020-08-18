@@ -1,6 +1,6 @@
-import React from 'react'
-import {ReactComponent as Triangle} from '../assets/orange-triangle.svg'
-import {ReactComponent as MailIcon} from '../assets/mail-icon.svg'
+import React from "react";
+import { ReactComponent as Triangle } from "../assets/orange-triangle.svg";
+import { ReactComponent as MailIcon } from "../assets/mail-icon.svg";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -15,6 +15,7 @@ export default class HireUsForm extends React.Component {
   }
 
   /* Here’s the juicy bit for posting the form submission */
+  initialState = { name: "", email: "", message: "" }
 
   handleSubmit = (e) => {
     fetch("/", {
@@ -26,6 +27,7 @@ export default class HireUsForm extends React.Component {
       .catch((error) => alert(error));
 
     e.preventDefault();
+    this.setState(() => this.initialState)
   };
 
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
@@ -52,11 +54,12 @@ export default class HireUsForm extends React.Component {
             </div>
           </div>
           <div className="right-inside">
-            <form onSubmit={this.handleSubmit}>
+            <form id="hireform" onSubmit={this.handleSubmit}>
               <input type="hidden" name="form-name" value="hire-form" />
               <h1>Hire Us</h1>
               <h2>Message</h2>
               <textarea
+                required
                 className="message-input"
                 name="message"
                 value={message}
@@ -66,6 +69,7 @@ export default class HireUsForm extends React.Component {
                 <div className="name">
                   <h2>Your Name</h2>
                   <input
+                    required
                     className="input-nameemail"
                     type="text"
                     name="name"
@@ -76,6 +80,7 @@ export default class HireUsForm extends React.Component {
                 <div className="email">
                   <h2>Your Email</h2>
                   <input
+                    required
                     className="input-nameemail"
                     type="email"
                     name="email"
