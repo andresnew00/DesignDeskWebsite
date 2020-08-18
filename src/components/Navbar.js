@@ -2,7 +2,6 @@ import React from "react";
 import { ReactComponent as Logo } from "../assets/logodd.svg";
 import { ReactComponent as Burger } from "../assets/open-menu.svg";
 import { Link } from "react-router-dom";
-import Navegation from "../pages/Navigation";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

@@ -1,6 +1,6 @@
-import React from "react";
-import { ReactComponent as MailIcon } from "../assets/mail-icon.svg";
-import { ReactComponent as Triangle } from "../assets/orange-triangle.svg";
+import React from 'react'
+import {ReactComponent as Triangle} from '../assets/orange-triangle.svg'
+import {ReactComponent as MailIcon} from '../assets/mail-icon.svg'
 
 const encode = (data) => {
   return Object.keys(data)
@@ -20,7 +20,7 @@ export default class HireUsForm extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
+      body: encode({ "form-name": "hire-form", ...this.state }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
@@ -53,6 +53,7 @@ export default class HireUsForm extends React.Component {
           </div>
           <div className="right-inside">
             <form onSubmit={this.handleSubmit}>
+              <input type="hidden" name="form-name" value="hire-form" />
               <h1>Hire Us</h1>
               <h2>Message</h2>
               <textarea
@@ -83,7 +84,6 @@ export default class HireUsForm extends React.Component {
                   />
                 </div>
               </div>
-              <input type="hidden" name="form-name" value="contact" />
               <div className="button-wrapper">
                 <button type="submit">Send</button>
               </div>

@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Maintenance />
+        {/* <Maintenance /> */}
         <Route
           render={({ location }) => (
             <TransitionGroup>
