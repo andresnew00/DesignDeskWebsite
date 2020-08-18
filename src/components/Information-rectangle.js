@@ -8,7 +8,7 @@ export default function InfoRectangle(props) {
           <h3>PHONE NUMBER</h3>
           <h1 className="phoneNumber">+1 (678) 338-6427</h1>
           <h3>EMAIL ADDRESS</h3>
-          <h1>info@information.com</h1>
+          <h1>andresinciarte.dev@gmail.com</h1>
         </div>
         <div className="right-side">
           <h3>OUR LOCATION</h3>

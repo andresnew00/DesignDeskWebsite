@@ -179,7 +179,7 @@ body {
       margin: 0;
       padding: 0;
       display: flex;
-      margin: 1em;
+      margin: 0.6em;
       align-self: center;
       a {
         text-decoration: none;
@@ -376,6 +376,7 @@ body {
   .computer-girls-img {
     width: 20em;
     align-self: flex-end;
+    margin-top: 3em;
   }
 }
 
@@ -640,6 +641,9 @@ body {
         .instagram {
           width: 1.95em;
         }
+      }
+      ul {
+        margin: 0.6em;
       }
     }
     .copyright {

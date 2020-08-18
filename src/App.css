@@ -232,7 +232,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1em;
+  margin: 0.6em;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -499,6 +499,7 @@ body {
   width: 20em;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-top: 3em;
 }
 
 .skills-wrapper {
@@ -875,6 +876,9 @@ body {
   }
   .footer-wrapper .top-container .social-media-logos .instagram {
     width: 1.95em;
+  }
+  .footer-wrapper .top-container ul {
+    margin: 0.6em;
   }
   .footer-wrapper .copyright {
     -ms-flex-item-align: center;

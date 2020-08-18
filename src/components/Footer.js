@@ -31,11 +31,11 @@ function Footer() {
           </li>
         </ul>
         <div className="social-media-logos">
-          <div className="facebook">
-            <FacebookLogo />
+          <div className="facebook" >
+            <a href="https://www.facebook.com/Design-Desk-109023230918615"><FacebookLogo /></a>
           </div>
           <div className="instagram">
-            <InstagramLogo />
+          <a href="https://www.instagram.com/inciarte_development/?hl=en"><InstagramLogo /></a>
           </div>
         </div>
       </div>
