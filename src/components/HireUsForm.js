@@ -90,7 +90,7 @@ export default class HireUsForm extends React.Component {
                 </div>
               </div>
               <div className="button-wrapper">
-                <button type="submit">Send</button>
+                <button type="submit" className="hvr-shadow">Send</button>
               </div>
             </form>
           </div>

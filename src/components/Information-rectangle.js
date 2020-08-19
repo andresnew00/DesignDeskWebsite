@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function InfoRectangle(props) {
   return (
@@ -13,7 +14,11 @@ export default function InfoRectangle(props) {
         <div className="right-side">
           <h3>OUR LOCATION</h3>
           <h1>Coming soon</h1>
-          { props.showButton === false ? (null) : (<button>CONTACT US</button>) }
+          {props.showButton === false ? null : (
+            <Link to={`${process.env.PUBLIC_URL}/contact`}>
+              <button className="hvr-fade hvr-shadow">CONTACT US</button>
+            </Link>
+          )}
         </div>
         <div className="bottom-blue-rectangle"></div>
       </div>
