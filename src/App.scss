@@ -165,7 +165,6 @@ body {
   padding: 1em;
   display: flex;
   flex-direction: column;
-
   .top-container {
     display: flex;
     flex-direction: column;
@@ -188,6 +187,11 @@ body {
         padding: 0.6em;
         font-size: 20px;
         border-left: 2px black;
+      }
+      .currentPage {
+        font-weight: 500;
+        pointer-events: none; 
+        cursor: default;
       }
     }
     .social-media-logos {

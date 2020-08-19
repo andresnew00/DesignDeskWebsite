@@ -5,10 +5,7 @@ import { Link } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function Navbar(props) {
-  // console.log(props.location);
-
-  const algo = "hola";
+function Navbar() {
   return (
     <header>
       <div className="navbar-wrapper">
@@ -33,7 +30,6 @@ function Navbar(props) {
                       to={{
                         pathname: `${process.env.PUBLIC_URL}/navigation`
                       }}
-                      algo={algo}
                     >
                       <Burger />
                     </Link>

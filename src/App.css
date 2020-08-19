@@ -246,6 +246,12 @@ body {
   border-left: 2px black;
 }
 
+.footer-wrapper .top-container ul .currentPage {
+  font-weight: 500;
+  pointer-events: none;
+  cursor: default;
+}
+
 .footer-wrapper .top-container .social-media-logos {
   display: -webkit-box;
   display: -ms-flexbox;
