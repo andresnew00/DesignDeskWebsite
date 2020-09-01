@@ -58,12 +58,12 @@ function Footer() {
         </ul>
         <div className="social-media-logos">
           <div className="facebook">
-            <a href="https://www.facebook.com/Design-Desk-109023230918615">
+            <a href="https://www.facebook.com/Design-Desk-109023230918615" title="Facebook">
               <FacebookLogo />
             </a>
           </div>
           <div className="instagram">
-            <a href="https://www.instagram.com/inciarte_development/?hl=en">
+            <a href="https://www.instagram.com/inciarte_development/?hl=en" title="Instagram">
               <InstagramLogo />
             </a>
           </div>

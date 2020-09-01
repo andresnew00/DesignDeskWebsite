@@ -190,7 +190,7 @@ body {
       }
       .currentPage {
         font-weight: 500;
-        pointer-events: none; 
+        pointer-events: none;
         cursor: default;
       }
     }
@@ -639,6 +639,11 @@ body {
   }
 }
 
+//quick fix on hover buttons
+.rectangle-container .info-rectangle .left-side .hvr-fade, .rectangle-container .info-rectangle .right-side .hvr-fade, .form-wrapper .form-box .right-inside .hvr-shadow {
+  cursor: pointer;
+}
+
 // Media
 @media (min-width: 650px) {
   body {
@@ -800,5 +805,36 @@ body {
       flex-direction: row;
       justify-content: space-evenly;
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 568px) {
+  .hero-wrapper .square-text .rectangle-text , .navbar-wrapper .phoneNburger .phoneNumber {
+    font-size: 0.9em;
+  }
+  .why-wrapper .top-white-rectangle .bottom-blue-rectangle {
+    left: 1em;
+  }
+  .why-wrapper .computer-girls-img {
+    margin-top: 6em;
+    align-self: auto;
+  }
+  .footer-wrapper .top-container ul a {
+    font-size: 17px;
+  }
+  .form-wrapper .form-box .left-inside .under-icon {
+    flex-direction: column;
+  }
+  .form-wrapper .form-box .left-inside .triangle-separator {
+  top: 11em;
+  }
+  .hero-wrapper .main-text {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 640px) and (max-device-width: 360px){
+  .form-wrapper .form-box .left-inside .triangle-separator {
+    top: 1em;
   }
 }

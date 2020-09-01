@@ -8,7 +8,7 @@ import Information from "../components/Information";
 import Footer from "../components/Footer";
 
 function Home() {
-    const message = <div>Creative and <br /> Practical.</div>
+    const message = <div>Creative and <br /> Practical, Web Design.</div>
   return (
     <div className="App">
       <Navbar location={"home"}/>
