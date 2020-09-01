@@ -342,11 +342,6 @@ body {
   font-size: 0.9em;
 }
 
-.rectangle-container .info-rectangle .left-side .phoneNumber,
-.rectangle-container .info-rectangle .right-side .phoneNumber {
-  font-size: 1.2em;
-}
-
 .rectangle-container .info-rectangle .left-side a,
 .rectangle-container .info-rectangle .right-side a {
   text-decoration: none;
