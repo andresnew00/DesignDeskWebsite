@@ -15,7 +15,12 @@ function WhyUs() {
                 are creative, easy to use, and personal. We work closely with
                 our clients to provide the best balance of user experience and
                 creativity your project can have to show people what your
-                business is all about.
+                business is all about. <br></br>
+                <br></br>
+                We offer the best website design near the Lawrenceville area,
+                and extend through Gwinnett County. We currently offer services
+                as SEO, website design and development, logo design and much
+                more. Contact us for more information and FREE estimates!
               </p>
               <div className="bottom-blue-rectangle"></div>
             </div>

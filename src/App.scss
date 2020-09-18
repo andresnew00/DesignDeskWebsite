@@ -364,7 +364,7 @@ body {
     width: 90%;
     height: auto;
     display: block;
-    margin-bottom: 22em;
+    margin-bottom: 2em;
   }
   .top-white-rectangle {
     background-color: white;
@@ -375,7 +375,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    position: absolute;
     top: 0;
     left: 0;
     h2 {
@@ -401,8 +400,40 @@ body {
 
   .computer-girls-img {
     width: 20em;
-    align-self: flex-end;
-    margin-top: 3em;
+    margin-top: 1.5em;
+  }
+}
+
+.barWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffbe55;
+  .content {
+    .title {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .insideContent {
+      text-align: center;
+      p {
+        text-align: left;
+      }
+    }
+  }
+  button {
+    background-color: #ff9431;
+    border-radius: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    width: 12em;
+    height: 2.5em;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+    text-align: center;
   }
 }
 
@@ -640,7 +671,9 @@ body {
 }
 
 //quick fix on hover buttons
-.rectangle-container .info-rectangle .left-side .hvr-fade, .rectangle-container .info-rectangle .right-side .hvr-fade, .form-wrapper .form-box .right-inside .hvr-shadow {
+.rectangle-container .info-rectangle .left-side .hvr-fade,
+.rectangle-container .info-rectangle .right-side .hvr-fade,
+.form-wrapper .form-box .right-inside .hvr-shadow {
   cursor: pointer;
 }
 
@@ -809,15 +842,15 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 568px) {
-  .hero-wrapper .square-text .rectangle-text , .navbar-wrapper .phoneNburger .phoneNumber {
+  .hero-wrapper .square-text .rectangle-text,
+  .navbar-wrapper .phoneNburger .phoneNumber {
     font-size: 0.9em;
   }
   .why-wrapper .top-white-rectangle .bottom-blue-rectangle {
     left: 1em;
   }
   .why-wrapper .computer-girls-img {
-    margin-top: 6em;
-    align-self: auto;
+    align-self: end;
   }
   .footer-wrapper .top-container ul a {
     font-size: 17px;
@@ -826,14 +859,14 @@ body {
     flex-direction: column;
   }
   .form-wrapper .form-box .left-inside .triangle-separator {
-  top: 11em;
+    top: 11em;
   }
   .hero-wrapper .main-text {
     font-size: 2em;
   }
 }
 
-@media (min-width: 640px) and (max-device-width: 360px){
+@media (min-width: 640px) and (max-device-width: 360px) {
   .form-wrapper .form-box .left-inside .triangle-separator {
     top: 1em;
   }

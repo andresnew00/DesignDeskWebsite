@@ -8,7 +8,7 @@ import VisibilitySensor from "react-visibility-sensor";
 function Skills() {
   return (
     <div className="skills-wrapper">
-      <h3>Dress your company for business</h3>
+      <h3>Dress your company for success</h3>
       <div className="skills">
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
