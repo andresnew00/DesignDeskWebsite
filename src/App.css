@@ -538,7 +538,6 @@ body {
 .barWrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,11 +546,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffbe55;
+  /* BACKGROUND TRANSITIONS */
+  /* Fade */
 }
 
 .barWrapper .content .title {
   text-align: center;
-  margin-bottom: 1em;
+  font-size: 1.5em;
+  margin: 1em;
 }
 
 .barWrapper .content .insideContent {
@@ -559,7 +561,8 @@ body {
 }
 
 .barWrapper .content .insideContent p {
-  text-align: left;
+  text-align: center;
+  font-weight: 300;
 }
 
 .barWrapper button {
@@ -568,11 +571,36 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: 20px;
+  margin: 1em;
   width: 12em;
   height: 2.5em;
   letter-spacing: 0.05em;
   margin-top: 1em;
   text-align: center;
+  cursor: pointer;
+}
+
+.barWrapper .hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.barWrapper .hvr-fade:hover,
+.barWrapper .hvr-fade:focus,
+.barWrapper .hvr-fade:active {
+  background-color: #dd8029;
+  color: black;
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .skills-wrapper {
@@ -934,6 +962,30 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .barWrapper .content .insideContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0em 2em 2em 2em;
+  }
+  .barWrapper .content .leftSide {
+    width: 30%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .barWrapper .content .rightSide {
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .rectangle-container {
     width: 60%;

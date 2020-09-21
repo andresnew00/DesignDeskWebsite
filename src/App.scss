@@ -407,19 +407,20 @@ body {
 .barWrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1em;
   display: flex;
   flex-direction: column;
   background-color: #ffbe55;
   .content {
     .title {
       text-align: center;
-      margin-bottom: 1em;
+      font-size: 1.5em;
+      margin: 1em;
     }
     .insideContent {
       text-align: center;
       p {
-        text-align: left;
+        text-align: center;
+        font-weight: 300;
       }
     }
   }
@@ -429,11 +430,34 @@ body {
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
+    margin: 1em;
     width: 12em;
     height: 2.5em;
     letter-spacing: 0.05em;
     margin-top: 1em;
     text-align: center;
+    cursor: pointer;
+  }
+  /* BACKGROUND TRANSITIONS */
+  /* Fade */
+  .hvr-fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  .hvr-fade:hover,
+  .hvr-fade:focus,
+  .hvr-fade:active {
+    background-color: #dd8029;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -688,6 +712,24 @@ body {
   .why-wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .barWrapper {
+    .content {
+      .insideContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0em 2em 2em 2em;
+      }
+      .leftSide {
+        width: 30%;
+        align-content: center;
+      }
+      .rightSide {
+        width: 50%;
+        align-self: center;
+      }
+    }
   }
   .rectangle-container {
     width: 60%;
