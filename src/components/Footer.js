@@ -70,7 +70,7 @@ function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <p>Andres Inciarte 2020. All rights reserved</p>
+        <p>Design Desk {(new Date().getFullYear())}. All rights reserved</p>
       </div>
     </div>
   );
