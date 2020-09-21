@@ -23,7 +23,7 @@ export default class PortfolioBar extends React.Component {
       } else {
         this.setState({ imageIndex: this.state.imageIndex + 1 });
       }
-    }, 2000);
+    }, 4000);
   }
   componentWillUnmount() {
     clearInterval(this.interval);
