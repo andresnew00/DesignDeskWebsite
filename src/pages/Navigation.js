@@ -27,6 +27,9 @@ export default function Navigation(props) {
             <Link to={`${process.env.PUBLIC_URL}/about`}>About</Link>
           </li>
           <li>
+            <Link to={`${process.env.PUBLIC_URL}/portfolio`}>Portfolio</Link>
+          </li>
+          <li>
             <Link to={`${process.env.PUBLIC_URL}/contact`}>Contact Us</Link>
           </li>
         </ul>

@@ -55,6 +55,20 @@ function Footer() {
               <Link to={`${process.env.PUBLIC_URL}/contact`}>Contact Us</Link>
             </li>
           )}
+          {location.pathname === "/portfolio" ? (
+            <li>
+              <Link
+                className="currentPage"
+                to={`${process.env.PUBLIC_URL}/portfolio`}
+              >
+                Portfolio
+              </Link>
+            </li>
+          ) : (
+            <li>
+              <Link to={`${process.env.PUBLIC_URL}/portfolio`}>Portfolio</Link>
+            </li>
+          )}
         </ul>
         <div className="social-media-logos">
           <div className="facebook">

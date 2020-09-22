@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Navegation from "./pages/Navigation";
 import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio"
 import Maintenance from "./pages/Maintenance"
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -31,6 +32,10 @@ function App() {
                   <Route
                     path={`${process.env.PUBLIC_URL}/about`}
                     component={About}
+                  />
+                  <Route
+                    path={`${process.env.PUBLIC_URL}/portfolio`}
+                    component={Portfolio}
                   />
                   <Route
                     path={`${process.env.PUBLIC_URL}/contact`}
