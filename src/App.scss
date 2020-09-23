@@ -410,6 +410,11 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffbe55;
+  .rightSide {
+    a {
+      color: black;
+    }
+  }
   .content {
     .title {
       text-align: center;
@@ -585,6 +590,36 @@ body {
     .text-section {
       text-align: center;
     }
+  }
+}
+
+// Portfolio Components
+.banner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 148, 49, 0.62);
+  padding: 2em;
+  .text {
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+
+.Websites-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.portfolioItem-wrapper {
+  max-width: 1200px;
+  margin: 1em;
+  img {
+    border-radius: 30px;
+    width: 100%;
   }
 }
 
@@ -796,6 +831,24 @@ body {
     .conversation-wrapper {
       width: 20em;
       margin-left: 1em;
+    }
+  }
+
+  .Websites-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolioItem-wrapper {
+    max-width: 1200px;
+    width: 45%;
+
+    img {
+      padding: 1em;
+      border-radius: 30px;
     }
   }
 

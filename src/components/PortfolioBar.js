@@ -2,11 +2,9 @@ import React from "react";
 import instagramimg from "../assets/InstagramFrame.png";
 import instagramimg2 from "../assets/instagram-img2.jpg";
 import CrossfadeImage from "react-crossfade-image";
+import {Link} from "react-router-dom";
 
-const images = [
-  instagramimg,
-  instagramimg2,
-];
+const images = [instagramimg, instagramimg2];
 
 export default class PortfolioBar extends React.Component {
   constructor() {
@@ -18,7 +16,7 @@ export default class PortfolioBar extends React.Component {
 
   componentDidMount() {
     this.interval = setInterval(() => {
-        if (this.state.imageIndex === images.length - 1) {
+      if (this.state.imageIndex === images.length - 1) {
         this.setState({ imageIndex: 0 });
       } else {
         this.setState({ imageIndex: this.state.imageIndex + 1 });
@@ -49,7 +47,9 @@ export default class PortfolioBar extends React.Component {
                 portfolio of happy clients and their responsive sites!
               </p>
 
-              <button className="hvr-fade hvr-shadow">Portfolio</button>
+              <Link to={`${process.env.PUBLIC_URL}/portfolio`}>
+                <button className="hvr-fade hvr-shadow">Portfolio</button>
+              </Link>
             </div>
           </div>
         </div>

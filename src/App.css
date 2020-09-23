@@ -550,6 +550,10 @@ body {
   /* Fade */
 }
 
+.barWrapper .rightSide a {
+  color: black;
+}
+
 .barWrapper .content .title {
   text-align: center;
   font-size: 1.5em;
@@ -785,6 +789,38 @@ body {
 
 .WhoWeAre .wrapper .text-section {
   text-align: center;
+}
+
+.banner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 148, 49, 0.62);
+  padding: 2em;
+}
+
+.banner-wrapper .text {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.Websites-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolioItem-wrapper {
+  max-width: 1200px;
+  margin: 1em;
+}
+
+.portfolioItem-wrapper img {
+  border-radius: 30px;
+  width: 100%;
 }
 
 .CompanyInfo-wrapper {
@@ -1070,6 +1106,26 @@ body {
   .CompanyInfo-wrapper .conversation-wrapper {
     width: 20em;
     margin-left: 1em;
+  }
+  .Websites-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolioItem-wrapper {
+    max-width: 1200px;
+    width: 45%;
+  }
+  .portfolioItem-wrapper img {
+    padding: 1em;
+    border-radius: 30px;
   }
   .form-wrapper .form-box {
     display: -webkit-box;
