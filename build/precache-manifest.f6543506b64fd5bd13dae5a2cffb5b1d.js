@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69e97f4d6934bb6a2821da960bebb792",
+    "revision": "6e510d80f87bd535eee243761807c603",
     "url": "/index.html"
   },
   {
-    "revision": "5f2aa98d2ac0e1d4595b",
-    "url": "/static/css/main.a7f469b2.chunk.css"
+    "revision": "1fccda27fd792b3d3598",
+    "url": "/static/css/main.fb3465b7.chunk.css"
   },
   {
-    "revision": "bef80f34147597e40e92",
-    "url": "/static/js/2.b2a802f2.chunk.js"
+    "revision": "c1eaeebf606a3e983dd0",
+    "url": "/static/js/2.c0770636.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.b2a802f2.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.c0770636.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f2aa98d2ac0e1d4595b",
-    "url": "/static/js/main.67edb442.chunk.js"
+    "revision": "1fccda27fd792b3d3598",
+    "url": "/static/js/main.e0dbf0d4.chunk.js"
   },
   {
     "revision": "c50cae391a257e2dbdb1",
     "url": "/static/js/runtime-main.d8ec7541.js"
+  },
+  {
+    "revision": "d5dd4cad38722464c484fc24c61b9123",
+    "url": "/static/media/InstagramFrame.d5dd4cad.png"
   },
   {
     "revision": "8fbed1f415bc1a765538937a94a8bbe2",
@@ -50,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "034caef7c76fb0fe11bb7646dc4efd81",
     "url": "/static/media/instagram-icon.034caef7.svg"
+  },
+  {
+    "revision": "0f2c53582f312c65f9ecc971ba53615d",
+    "url": "/static/media/instagram-img2.0f2c5358.jpg"
   },
   {
     "revision": "26951b85f10d2dd8ea62988b42e5197d",
