@@ -72,12 +72,12 @@ function Footer() {
         </ul>
         <div className="social-media-logos">
           <div className="facebook">
-            <a href="https://www.facebook.com/Design-Desk-109023230918615" title="Facebook">
+            <a href="https://www.facebook.com/Design-Desk-109023230918615" target="_blank" title="Facebook">
               <FacebookLogo />
             </a>
           </div>
           <div className="instagram">
-            <a href="https://www.instagram.com/inciarte_development/?hl=en" title="Instagram">
+            <a href="https://www.instagram.com/inciarte_development/?hl=en" target="_blank" title="Instagram">
               <InstagramLogo />
             </a>
           </div>
