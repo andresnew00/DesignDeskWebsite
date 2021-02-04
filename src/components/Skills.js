@@ -5,6 +5,7 @@ import { ReactComponent as GuySearching } from "../assets/guy-searching.svg";
 import { Spring } from "react-spring/renderprops";
 import VisibilitySensor from "react-visibility-sensor";
 
+// This component is not in use
 function Skills() {
   return (
     <div className="skills-wrapper">

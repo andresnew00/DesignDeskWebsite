@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+$widthPage: 1800px;
+
 button {
   padding: 0;
   border: none;
@@ -32,6 +34,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(255, 154, 60, 0.9);
+
   .message {
     height: 100%;
     width: 100%;
@@ -57,14 +60,17 @@ body {
   opacity: 0;
   z-index: 1;
 }
+
 .fade-appear-active,
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 200ms linear 150ms;
 }
+
 .fade-exit {
   opacity: 1;
 }
+
 .fade-exit.fade-exit-active {
   opacity: 0;
   transition: opacity 150ms linear;
@@ -75,18 +81,22 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.8em;
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
+
   .logo {
     width: 6em;
   }
+
   .phoneNburger {
     display: flex;
+
     .phoneNumber {
       padding-right: 0.5em;
       font-size: 1.1em;
       align-self: center;
     }
+
     .burgerMenu {
       width: 3em;
       align-self: center;
@@ -100,14 +110,17 @@ body {
   position: relative;
   margin: 0 auto;
   padding: 1em;
-  max-width: 1200px;
+  max-width: $widthPage;
+
   .main-text {
     margin-top: 2em;
     font-size: 3em;
     font-weight: 600;
   }
+
   .square-text {
     right: 0em;
+
     .rectangle-text {
       text-align: right;
       margin-top: 1.5em;
@@ -115,6 +128,7 @@ body {
       font-weight: 500;
       font-size: 1em;
     }
+
     .rectangle {
       max-width: 10em;
       min-width: 11.2em;
@@ -126,6 +140,7 @@ body {
       z-index: -1;
     }
   }
+
   .shape1-wrapper {
     z-index: -1;
     top: -7em;
@@ -138,6 +153,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
   .shape2-wrapper {
     position: absolute;
     z-index: -1;
@@ -147,6 +163,7 @@ body {
     right: -1em;
     z-index: -5;
   }
+
   .shape3-wrapper {
     position: absolute;
     z-index: -1;
@@ -160,19 +177,22 @@ body {
 .footer-wrapper {
   background: linear-gradient(100.96deg, #155263 12.3%, #23849f 97.18%);
   bottom: 0;
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   padding: 1em;
   display: flex;
   flex-direction: column;
+
   .top-container {
     display: flex;
     flex-direction: column;
+
     .logo {
       min-width: 8em;
       max-width: 15em;
       align-self: center;
     }
+
     ul {
       list-style: none;
       margin: 0;
@@ -180,6 +200,7 @@ body {
       display: flex;
       margin: 0.6em;
       align-self: center;
+
       a {
         text-decoration: none;
         color: black;
@@ -188,24 +209,29 @@ body {
         font-size: 20px;
         border-left: 2px black;
       }
+
       .currentPage {
         font-weight: 500;
         pointer-events: none;
         cursor: default;
       }
     }
+
     .social-media-logos {
       display: flex;
       align-self: center;
+
       .facebook {
         width: 8em;
         margin-right: 1em;
       }
+
       .instagram {
         width: 7.8em;
       }
     }
   }
+
   .copyright {
     align-self: center;
     font-weight: 100;
@@ -220,6 +246,7 @@ body {
   display: block;
   margin-bottom: 18em;
   align-self: center;
+
   .info-rectangle {
     background-color: white;
     box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
@@ -233,27 +260,32 @@ body {
     left: 0;
     display: flex;
     flex-direction: column;
+
     .left-side,
     .right-side {
       display: flex;
       flex-direction: column;
       align-self: center;
       align-items: center;
+
       h3 {
         font-style: normal;
         font-weight: 300;
         font-size: 20px;
         margin: 0.5em;
       }
+
       h1 {
         margin: 0;
         font-weight: 500;
         font-size: 0.9em;
       }
+
       a {
         text-decoration: none;
         color: black;
       }
+
       button {
         background-color: #ff9431;
         border-radius: 20px;
@@ -266,6 +298,7 @@ body {
         margin-top: 1em;
         text-align: center;
       }
+
       /* BACKGROUND TRANSITIONS */
       /* Fade */
       .hvr-fade {
@@ -280,6 +313,7 @@ body {
         -webkit-transition-property: color, background-color;
         transition-property: color, background-color;
       }
+
       .hvr-fade:hover,
       .hvr-fade:focus,
       .hvr-fade:active {
@@ -288,6 +322,7 @@ body {
         box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
       }
     }
+
     .bottom-blue-rectangle {
       position: absolute;
       background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
@@ -312,20 +347,24 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(255, 154, 60, 0.9);
+
   .wrapper-top {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    max-width: 1200px;
+    max-width: $widthPage;
     margin: 0 auto;
+
     .logo {
       width: 6em;
     }
+
     .x-icon {
       width: 3em;
       align-self: center;
     }
   }
+
   .wrapper-bottom {
     display: flex;
     flex-direction: column;
@@ -333,13 +372,16 @@ body {
     justify-content: center;
     text-align: center;
     min-height: 70vh;
+
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
+
       li {
         margin: 1.5em;
         text-align: center;
+
         a {
           text-decoration: none;
           color: black;
@@ -353,11 +395,16 @@ body {
 
 // Home Components
 .why-wrapper {
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   padding: 1em;
   display: flex;
   flex-direction: column;
+
+  span {
+    color: #FF9431;
+  }
+
   // Rectangles on top of each other
   .rectangle-container {
     position: relative;
@@ -366,6 +413,7 @@ body {
     display: block;
     margin-bottom: 2em;
   }
+
   .top-white-rectangle {
     background-color: white;
     box-shadow: 0.3em 0.3em 0.1em rgba(0, 0, 0, 0.22);
@@ -377,14 +425,17 @@ body {
     display: block;
     top: 0;
     left: 0;
+
     h2 {
       font-weight: 500;
     }
+
     p {
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal;
       line-height: 1.5em;
     }
+
     .bottom-blue-rectangle {
       position: absolute;
       background: linear-gradient(268.47deg, #155263 7.1%, #23839e 58.62%);
@@ -405,30 +456,35 @@ body {
 }
 
 .barWrapper {
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   background-color: #ffbe55;
+
   .rightSide {
     a {
       color: black;
     }
   }
+
   .content {
     .title {
       text-align: center;
       font-size: 1.5em;
       margin: 1em;
     }
+
     .insideContent {
       text-align: center;
+
       p {
         text-align: center;
         font-weight: 300;
       }
     }
   }
+
   button {
     background-color: #ff9431;
     border-radius: 20px;
@@ -443,6 +499,7 @@ body {
     text-align: center;
     cursor: pointer;
   }
+
   /* BACKGROUND TRANSITIONS */
   /* Fade */
   .hvr-fade {
@@ -457,6 +514,7 @@ body {
     -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
   }
+
   .hvr-fade:hover,
   .hvr-fade:focus,
   .hvr-fade:active {
@@ -466,47 +524,146 @@ body {
   }
 }
 
+.Services-wrapper {
+  h2 {
+    font-size: 2.2em;
+    margin: 0;
+  }
+
+  span {
+    color: #FF9431;
+  }
+
+  max-width: $widthPage;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  padding-top: 2em;
+
+  p {
+    text-align: center;
+  }
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .Box-border {
+    text-align: -webkit-center;
+    flex-grow: 1;
+    //border gradiant
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    max-width: 24em;
+
+    position: relative;
+    padding: 2em;
+    box-sizing: border-box;
+
+    $border: 2px;
+    color: rgb(0, 0, 0);
+    background: rgb(235, 235, 235);
+    background-clip: padding-box;
+    /* !importante */
+    border: solid $border transparent;
+    /* !importante */
+    border-radius: 1em;
+
+    &:hover {
+      background: #FEAD62;
+      transition: 0.8s;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border;
+      /* !importante */
+      border-radius: inherit;
+      /* !importante */
+      background: linear-gradient(180deg, #FEAD62, #FEDE44);
+    }
+
+    img {
+      padding: 1em;
+    }
+
+    //circle 
+    .icon-circle {
+      display: flex;
+      width: 6em;
+      height: 6em;
+      border-radius: 50%;
+      overflow: hidden;
+      border: solid 2px #FEAD62;
+      background-color: rgb(235, 235, 235);
+    }
+  }
+}
+
+// not in use
 .skills-wrapper {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1em;
+
   h3 {
     text-align: center;
     font-style: normal;
     font-weight: normal;
   }
+
   .webdesign-skill {
     display: flex;
     flex-direction: column;
+
     .pcguy {
       width: 24em;
       align-self: center;
     }
+
     h2 {
       text-align: center;
       margin-top: 0;
     }
   }
+
   .uiux-skill {
     display: flex;
     flex-direction: column;
+
     .girlOnPc {
       width: 20em;
       align-self: center;
     }
+
     h2 {
       text-align: center;
     }
   }
+
   .seo-skill {
     display: flex;
     flex-direction: column;
+
     .guySEO {
       width: 24em;
       align-self: center;
     }
+
     h2 {
       text-align: center;
     }
@@ -516,9 +673,10 @@ body {
 .testimonials-wrapper {
   background-color: #ffbe55;
   display: flex;
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   padding: 1em;
+
   .open-quote,
   .closing-quote {
     width: 1em;
@@ -529,23 +687,28 @@ body {
 
     color: rgba(0, 0, 0, 0.53);
   }
+
   .closing-quote {
     margin-top: 0.5em;
   }
+
   .testimonial-section {
     margin: 1em;
   }
+
   .testimonial {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.2em;
     text-align: center;
   }
+
   .author {
     font-weight: 500;
     font-size: 15px;
     text-align: center;
   }
+
   .company {
     font-weight: 300;
     font-style: normal;
@@ -557,9 +720,10 @@ body {
 .information-wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   padding: 1em;
+
   .coffee-guys {
     width: 20em;
     margin-left: -1em;
@@ -578,15 +742,17 @@ body {
 // About Components
 .WhoWeAre {
   .wrapper {
-    max-width: 1200px;
+    max-width: $widthPage;
     margin: 0 auto;
     padding: 1em;
     display: flex;
     flex-direction: column;
+
     .table-team {
       width: 20em;
       align-self: center;
     }
+
     .text-section {
       text-align: center;
     }
@@ -595,10 +761,11 @@ body {
 
 // Portfolio Components
 .banner-wrapper {
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   background: rgba(255, 148, 49, 0.62);
   padding: 2em;
+
   .text {
     text-align: center;
     font-size: 1.2em;
@@ -606,7 +773,7 @@ body {
 }
 
 .Websites-wrapper {
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -615,8 +782,9 @@ body {
 }
 
 .portfolioItem-wrapper {
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 1em;
+
   img {
     border-radius: 30px;
     width: 100%;
@@ -625,11 +793,12 @@ body {
 
 // Contact Components
 .CompanyInfo-wrapper {
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   padding: 1em;
   display: flex;
   flex-direction: column;
+
   .conversation-wrapper {
     width: 20em;
     align-self: center;
@@ -637,16 +806,18 @@ body {
 }
 
 .form-wrapper {
-  max-width: 1200px;
+  max-width: $widthPage;
   margin: 0 auto;
   padding: 1em;
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
+
   .form-box {
     background-color: rgb(228, 226, 226);
     border: 1px solid #b3b3b3;
     border-radius: 20px;
+
     .left-inside {
       background-color: #ff9431;
       border-radius: 20px 20px 0px 0px;
@@ -654,6 +825,7 @@ body {
       display: flex;
       flex-direction: row;
       position: relative;
+
       .triangle-separator {
         width: 4em;
         position: absolute;
@@ -661,11 +833,13 @@ body {
         right: 2em;
         transform: rotate(90deg);
       }
+
       .under-icon {
         display: flex;
         flex-direction: row;
         padding: 0.5em;
       }
+
       .icon-wrapper {
         width: 5em;
         align-self: center;
@@ -674,9 +848,11 @@ body {
 
     .right-inside {
       padding: 1em;
+
       h2 {
         font-weight: 300;
       }
+
       textarea,
       input {
         background-color: #d7d7d7;
@@ -687,18 +863,22 @@ body {
         font-size: 1em;
         font-family: "Montserrat", sans-serif;
       }
+
       .input-nameemail {
         width: 90%;
         height: 2em;
       }
+
       .message-input {
         width: 100%;
         height: 6em;
       }
+
       .name-email {
         display: flex;
         flex-direction: column;
       }
+
       button {
         background: linear-gradient(92.93deg, #ff9431 42.4%, #ffe33b 91.88%);
         border-radius: 10px;
@@ -707,6 +887,7 @@ body {
         font-size: 2em;
         margin-top: 1em;
       }
+
       /* Shadow */
       .hvr-shadow {
         display: inline-block;
@@ -719,6 +900,7 @@ body {
         -webkit-transition-property: box-shadow;
         transition-property: box-shadow;
       }
+
       .hvr-shadow:hover,
       .hvr-shadow:focus,
       .hvr-shadow:active {
@@ -748,63 +930,86 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .Services-wrapper {
+    .box-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+
   .barWrapper {
+    padding: 0em 2em 2em 2em;
+
     .content {
       .insideContent {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        padding: 0em 2em 2em 2em;
       }
+
       .leftSide {
         width: 30%;
         align-content: center;
       }
+
       .rightSide {
         width: 50%;
         align-self: center;
       }
     }
   }
+
   .rectangle-container {
     width: 60%;
   }
+
   .computer-girls-img {
     width: 20em;
     margin-left: 5em;
   }
+
   .skills {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
     .webdesign-skill {
       width: 20em;
     }
+
     .girlOnPc {
       width: 18em;
     }
+
     .guySEO {
       width: 20em;
     }
   }
+
   .footer-wrapper {
     .top-container {
       flex-direction: row;
       justify-content: space-between;
       position: relative;
+
       .social-media-logos {
         .facebook {
           width: 2em;
         }
+
         .instagram {
           width: 1.95em;
         }
       }
+
       ul {
         margin: 0.6em;
       }
     }
+
     .copyright {
       align-self: center;
       margin-left: auto;
@@ -815,9 +1020,11 @@ body {
     .wrapper {
       justify-content: space-evenly;
       flex-direction: row;
+
       .table-team {
         width: 80em;
       }
+
       .text-section {
         margin-left: 1em;
         text-align: left;
@@ -828,6 +1035,7 @@ body {
   .CompanyInfo-wrapper {
     flex-direction: row;
     justify-content: space-between;
+
     .conversation-wrapper {
       width: 20em;
       margin-left: 1em;
@@ -856,21 +1064,25 @@ body {
     .form-box {
       display: flex;
       flex-direction: row;
+
       .left-inside {
         padding-left: 2em;
         flex-direction: column;
         width: 30%;
         border-radius: 20px 0px 0px 20px;
+
         .triangle-separator {
           position: absolute;
           top: 1em;
           right: -3em;
           transform: rotate(0deg);
         }
+
         .under-icon {
           flex-direction: column;
           margin-top: 5em;
         }
+
         .icon-wrapper {
           width: 5em;
           align-self: start;
@@ -881,36 +1093,45 @@ body {
         margin: 1.5em 3.5em 3.5em 3.5em;
         padding: 0;
         width: 60%;
+
         h2 {
           font-weight: 300;
         }
+
         textarea {
           background-color: #d7d7d7;
           border: 1px solid #b7b7b7;
           border-radius: 20px;
           text-align: left;
         }
+
         .message-input {
           width: 95%;
           height: 10em;
         }
+
         .name-email {
           flex-direction: row;
+
           textarea {
             height: 4em;
             align-self: center;
             width: 90%;
           }
+
           .name {
             width: 50%;
           }
+
           .email {
             width: 50%;
           }
         }
+
         .button-wrapper {
           text-align: center;
         }
+
         button {
           width: 40%;
         }
@@ -923,11 +1144,13 @@ body {
   .information-wrapper {
     flex-direction: row;
     justify-content: space-evenly;
+
     .rectangle-container {
       margin-bottom: 0em;
       margin-left: 2em;
       align-self: initial;
     }
+
     .info-rectangle {
       display: flex;
       flex-direction: row;
@@ -937,25 +1160,32 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 568px) {
+
   .hero-wrapper .square-text .rectangle-text,
   .navbar-wrapper .phoneNburger .phoneNumber {
     font-size: 0.9em;
   }
+
   .why-wrapper .top-white-rectangle .bottom-blue-rectangle {
     left: 1em;
   }
+
   .why-wrapper .computer-girls-img {
     align-self: end;
   }
+
   .footer-wrapper .top-container ul a {
     font-size: 17px;
   }
+
   .form-wrapper .form-box .left-inside .under-icon {
     flex-direction: column;
   }
+
   .form-wrapper .form-box .left-inside .triangle-separator {
     top: 11em;
   }
+
   .hero-wrapper .main-text {
     font-size: 2em;
   }

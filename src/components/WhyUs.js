@@ -9,7 +9,7 @@ function WhyUs() {
         <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
           {(props) => (
             <div className="top-white-rectangle">
-              <h2 style={props}>Why us?</h2>
+              <h2 style={props}>Why Should You <span>Choose Us?</span></h2>
               <p style={props}>
                 At Design Desk we have a passion for developing products that
                 are creative, easy to use, and personal. We work closely with
@@ -20,7 +20,7 @@ function WhyUs() {
                 We offer the best website design near the Lawrenceville area,
                 and extend through Gwinnett County. We currently offer services
                 as SEO, website design and development, logo design and much
-                more. Contact us for more information and FREE estimates!
+                more. Contact us for more information and <b>FREE</b> estimates!
               </p>
               <div className="bottom-blue-rectangle"></div>
             </div>

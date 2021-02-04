@@ -7,6 +7,8 @@ import PortfolioBar from "../components/PortfolioBar";
 import Testimonials from "../components/Testimonials";
 import Information from "../components/Information";
 import Footer from "../components/Footer";
+import Services from "../components/Services";
+import HireUsForm from "../components/HireUsForm";
 
 function Home() {
     const message = <div>Creative and <br /> Practical, Web Design.</div>
@@ -15,10 +17,11 @@ function Home() {
       <Navbar location={"home"}/>
       <Hero title={message}/>
       <WhyUs />
+      <Services />
       <PortfolioBar />
-      <Skills />
       {/* <Testimonials /> */}
-      <Information />
+      {/* <Information /> */}
+      <HireUsForm />
       <Footer />
     </div>
   );
