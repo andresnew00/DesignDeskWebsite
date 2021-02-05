@@ -9,6 +9,7 @@ import Information from "../components/Information";
 import Footer from "../components/Footer";
 import Services from "../components/Services";
 import HireUsForm from "../components/HireUsForm";
+import ContactForm from "../components/ContactForm";
 
 function Home() {
     const message = <div>Creative and <br /> Practical, Web Design.</div>
@@ -21,7 +22,8 @@ function Home() {
       <PortfolioBar />
       {/* <Testimonials /> */}
       {/* <Information /> */}
-      <HireUsForm />
+      {/* <HireUsForm /> */}
+      <ContactForm />
       <Footer />
     </div>
   );

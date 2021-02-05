@@ -540,8 +540,8 @@ body {
 }
 
 .barWrapper {
+  font-weight: 600;
   max-width: 1800px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,8 +550,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffbe55;
+  padding: 2em;
   /* BACKGROUND TRANSITIONS */
   /* Fade */
+}
+
+.barWrapper b {
+  color: white;
 }
 
 .barWrapper .rightSide a {
@@ -569,23 +574,25 @@ body {
 }
 
 .barWrapper .content .insideContent p {
-  text-align: center;
-  font-weight: 300;
+  text-align: left;
+  line-height: 1.5em;
+  font-weight: 400;
 }
 
 .barWrapper button {
   background-color: #ff9431;
   border-radius: 20px;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: bold;
   font-size: 20px;
-  margin: 1em;
-  width: 12em;
-  height: 2.5em;
+  font-family: Montserrat;
+  font-style: normal;
+  width: 100%;
   letter-spacing: 0.05em;
+  height: 2.5em;
   margin-top: 1em;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 2em;
 }
 
 .barWrapper .hvr-fade {
@@ -639,6 +646,7 @@ body {
 
 .Services-wrapper p {
   text-align: center;
+  line-height: 1.5em;
 }
 
 .Services-wrapper .box-container {
@@ -847,6 +855,32 @@ body {
   font-style: normal;
   text-align: center;
   font-size: 12px;
+}
+
+.Contact-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  padding-top: 2em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Contact-wrapper .coffee-guys {
+  width: 20em;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .information-wrapper {
@@ -1181,7 +1215,7 @@ body {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .why-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1204,7 +1238,7 @@ body {
             flex-direction: row;
   }
   .barWrapper {
-    padding: 0em 2em 2em 2em;
+    padding: 2em;
   }
   .barWrapper .content .insideContent {
     display: -webkit-box;

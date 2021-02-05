@@ -31,7 +31,7 @@ export default class PortfolioBar extends React.Component {
     return (
       <div className="barWrapper">
         <div className="content">
-          <div className="title">Check out our work!</div>
+          <div className="title">Check Out <b>Our Work!</b></div>
           <div className="insideContent">
             <div className="leftSide">
               <CrossfadeImage
@@ -46,9 +46,14 @@ export default class PortfolioBar extends React.Component {
                 get their image out in the online world. Feel free to visit our
                 portfolio of happy clients and their responsive sites!
               </p>
+              <p>
+                We are determined in helping small businesses create websites to
+                get their image out in the online world. Feel free to visit our
+                portfolio of happy clients and their responsive sites!
+              </p>
 
               <Link to={`${process.env.PUBLIC_URL}/portfolio`}>
-                <button className="hvr-fade hvr-shadow">Portfolio</button>
+                <button className="hvr-fade hvr-shadow">PORTFOLIO</button>
               </Link>
             </div>
           </div>
