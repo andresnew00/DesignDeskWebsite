@@ -397,7 +397,7 @@ body {
 .why-wrapper {
   max-width: $widthPage;
   margin: 0 auto;
-  padding: 1em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
 
@@ -459,12 +459,16 @@ body {
   b {
     color: white;
   }
+
   font-weight: 600;
-  max-width: $widthPage;
   display: flex;
   flex-direction: column;
   background-color: #ffbe55;
   padding: 2em;
+
+  .width-wrapper {
+    max-width: $widthPage;
+  }
 
   .rightSide {
     a {
@@ -729,14 +733,179 @@ body {
   max-width: $widthPage;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  padding: 1em;
-  padding-top: 2em;
-  justify-content: space-evenly;
+  padding: 2em;
+  justify-content: space-between;
 
-  .right-wrapper {
+
+  .left-wrapper {
+    h2 {
+      font-size: 2.2em;
+      margin: 0;
+    }
+
+    span {
+      color: #FF9431;
+    }
+
+    p {
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1.5em;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+
+    $primary: #FF9431;
+    $secondary: #9c4c00;
+    $white: rgb(0, 0, 0);
+    $gray: #858585;
+
+    .form__group {
+      position: relative;
+      padding: 15px 0 0;
+      margin-top: 10px;
+    }
+
+    .form__field {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      border-bottom: 2px solid $gray;
+      outline: 0;
+      font-size: 1.3rem;
+      color: $white;
+      padding: 7px 0;
+      background: transparent;
+      transition: border-color 0.2s;
+
+      &::placeholder {
+        color: transparent;
+      }
+
+      &:placeholder-shown~.form__label {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+      }
+    }
+
+    .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: $gray;
+    }
+
+    .form__field:focus {
+      ~.form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: $primary;
+        font-weight: 700;
+      }
+
+      padding-bottom: 6px;
+      font-weight: 700;
+      border-width: 3px;
+      border-image: linear-gradient(to right, $primary, $secondary);
+      border-image-slice: 1;
+    }
+
+    /* reset input */
+    .form__field {
+
+      &:required,
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+
+    // button colors
+    .glow-on-hover {
+      color: #fff;
+      background: $primary;
+      position: relative;
+      z-index: 0;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Montserrat;
+      font-style: normal;
+      width: 100%;
+      letter-spacing: 0.05em;
+      height: 2.5em;
+      margin-top: 1em;
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 2em;
+    }
+
+    .glow-on-hover:before {
+      content: '';
+      background: linear-gradient(45deg, #FFC93C, #FF9A3C, #FF6F3C);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+      color: #333c3f;
+    }
+
+    .glow-on-hover:active:after {
+      background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+      opacity: 1;
+    }
+
+    .glow-on-hover:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #282e30;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    @keyframes glowing {
+      0% {
+        background-position: 0 0;
+      }
+
+      50% {
+        background-position: 400% 0;
+      }
+
+      100% {
+        background-position: 0 0;
+      }
+    }
   }
+
   .coffee-guys {
     width: 20em;
     transform: scaleX(-1);
@@ -839,74 +1008,7 @@ body {
   flex-direction: column;
   margin-bottom: 2em;
 
-  // button colors
-  .glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #FF9431;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-  }
 
-  .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #FF9431, #ff0000, #ff7300, #FF9431, #ff7300, #ff7300, #ff0000);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-  }
-
-  .glow-on-hover:active {
-    color: #FF9431
-  }
-
-  .glow-on-hover:active:after {
-    background: transparent;
-  }
-
-  .glow-on-hover:hover:before {
-    opacity: 1;
-  }
-
-  .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #c26c1c;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
-    }
-
-    50% {
-      background-position: 400% 0;
-    }
-
-    100% {
-      background-position: 0 0;
-    }
-  }
 
 
   .form-box {
@@ -1035,8 +1137,13 @@ body {
     }
   }
 
+  .Contact-wrapper {
+    flex-direction: row;
+  }
+
   .barWrapper {
     padding: 2em;
+
     .content {
       .insideContent {
         display: flex;

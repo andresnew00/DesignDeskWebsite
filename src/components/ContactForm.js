@@ -37,47 +37,59 @@ export default class HireUsForm extends React.Component {
     return (
       <div className="Contact-wrapper">
         <div className="left-wrapper">
-          <h2 className="title">Have any questions?</h2>
+          <h2 className="title">
+            Have any <span>questions?</span>
+          </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis congue
             odio diam eu cras augue elit.
           </p>
           <form id="hireform" onSubmit={this.handleSubmit}>
-            <input type="hidden" name="form-name" value="hire-form" />
-            <textarea
-              required
-              className="message-input"
-              name="message"
-              value={message}
-              onChange={this.handleChange}
-            />
-            <div className="name-email">
-              <div className="name">
-                <h2>Your Name</h2>
-                <input
-                  required
-                  className="input-nameemail"
-                  type="text"
-                  name="name"
-                  value={name}
-                  onChange={this.handleChange}
-                />
-              </div>
-              <div className="email">
-                <h2>Your Email</h2>
-                <input
-                  required
-                  className="input-nameemail"
-                  type="email"
-                  name="email"
-                  value={email}
-                  onChange={this.handleChange}
-                />
-              </div>
+            <div class="form__group field">
+              <input type="hidden" name="form-name" value="hire-form" />
+              <textarea
+                required
+                className="form__field"
+                name="message"
+                value={message}
+                onChange={this.handleChange}
+                placeholder="Message"
+              />
+              <label for="message" class="form__label">
+                Message
+              </label>
+            </div>
+            <div class="form__group field">
+              <input
+                required
+                className="form__field"
+                type="text"
+                name="name"
+                value={name}
+                onChange={this.handleChange}
+                placeholder="Name"
+              />
+              <label for="name" class="form__label">
+                Name
+              </label>
+            </div>
+            <div class="form__group field">
+              <input
+                required
+                className="form__field"
+                type="email"
+                name="email"
+                value={email}
+                onChange={this.handleChange}
+                placeholder="Email"
+              />
+              <label for="email" class="form__label">
+                Email
+              </label>
             </div>
             <div className="button-wrapper">
               <button type="submit" className="hvr-shadow glow-on-hover">
-                Send
+                SUBMIT
               </button>
             </div>
           </form>
