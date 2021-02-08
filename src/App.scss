@@ -175,23 +175,26 @@ body {
 }
 
 .footer-wrapper {
-  background: linear-gradient(100.96deg, #155263 12.3%, #23849f 97.18%);
+  background: #1A6479;
   bottom: 0;
   max-width: $widthPage;
   margin: 0 auto;
   padding: 1em;
+  padding-top: 2em;
   display: flex;
   flex-direction: column;
 
-  .top-container {
+  .social-media-logos {
     display: flex;
-    flex-direction: column;
+    align-self: center;
+    width: 15em;
+    justify-content: space-between;
+  }
 
-    .logo {
-      min-width: 8em;
-      max-width: 15em;
-      align-self: center;
-    }
+  .linkstopages {
+    display: flex;
+    align-self: center;
+    margin-top: 0.5em;
 
     ul {
       list-style: none;
@@ -204,38 +207,33 @@ body {
       a {
         text-decoration: none;
         color: black;
-        font-weight: 300;
+        font-weight: 400;
         padding: 0.6em;
-        font-size: 20px;
+        font-size: 18px;
         border-left: 2px black;
+        letter-spacing: 0.03em;
+        font-style: normal;
+        font-weight: 500;
       }
 
       .currentPage {
-        font-weight: 500;
+        font-weight: 600;
         pointer-events: none;
+        color: white;
         cursor: default;
       }
+
     }
 
-    .social-media-logos {
-      display: flex;
-      align-self: center;
-
-      .facebook {
-        width: 8em;
-        margin-right: 1em;
-      }
-
-      .instagram {
-        width: 7.8em;
-      }
-    }
   }
 
   .copyright {
+    display: flex;
     align-self: center;
-    font-weight: 100;
-    font-size: 0.6em;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
   }
 }
 
@@ -470,6 +468,7 @@ body {
     max-width: $widthPage;
   }
 
+
   .rightSide {
     a {
       color: black;
@@ -544,6 +543,10 @@ body {
     color: #FF9431;
   }
 
+  ul {
+    text-align: left;
+  }
+
   max-width: $widthPage;
   margin: 0 auto;
   display: flex;
@@ -555,6 +558,11 @@ body {
   p {
     text-align: center;
     line-height: 1.5em;
+    font-size: .9em;
+  }
+
+  .main-p {
+    font-size: 1em;
   }
 
   .box-container {
@@ -1121,7 +1129,39 @@ body {
   body {
     font-size: 18px;
   }
+
+  .footer-wrapper {
+    .social-media-logos {
+      width: 10em;
+    }
+  }
 }
+
+@media (min-width: 900px) {
+  .barWrapper {
+    padding: 2em;
+
+    .content {
+      .insideContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: -webkit-center;
+      }
+
+      .leftSide {
+        width: 25%;
+        align-content: center;
+      }
+
+      .rightSide {
+        width: 50%;
+        align-self: center;
+      }
+    }
+  }
+}
+
 
 @media (min-width: 800px) {
   .why-wrapper {
@@ -1149,10 +1189,11 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        text-align: -webkit-center;
       }
 
       .leftSide {
-        width: 30%;
+        width: 25%;
         align-content: center;
       }
 
@@ -1191,32 +1232,32 @@ body {
     }
   }
 
-  .footer-wrapper {
-    .top-container {
-      flex-direction: row;
-      justify-content: space-between;
-      position: relative;
+  // .footer-wrapper {
+  //   .top-container {
+  //     flex-direction: row;
+  //     justify-content: space-between;
+  //     position: relative;
 
-      .social-media-logos {
-        .facebook {
-          width: 2em;
-        }
+  //     .social-media-logos {
+  //       .facebook {
+  //         width: 2em;
+  //       }
 
-        .instagram {
-          width: 1.95em;
-        }
-      }
+  //       .instagram {
+  //         width: 1.95em;
+  //       }
+  //     }
 
-      ul {
-        margin: 0.6em;
-      }
-    }
+  //     ul {
+  //       margin: 0.6em;
+  //     }
+  //   }
 
-    .copyright {
-      align-self: center;
-      margin-left: auto;
-    }
-  }
+  //   .copyright {
+  //     align-self: center;
+  //     margin-left: auto;
+  //   }
+  // }
 
   .WhoWeAre {
     .wrapper {

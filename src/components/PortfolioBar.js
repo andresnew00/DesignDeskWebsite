@@ -45,14 +45,20 @@ export default class PortfolioBar extends React.Component {
               </div>
               <div className="rightSide">
                 <p>
-                  We are determined in helping small businesses create websites
-                  to get their image out in the online world. Feel free to visit
-                  our portfolio of happy clients and their responsive sites!
+                  We are determined to help all businesses develop websites to
+                  get their image out in the online world. It is demonstrated
+                  throughout our portfolio that we have helped lots of
+                  businesses like yours, by creating anything from logos to
+                  business cards, as well as developing a social media marketing
+                  and SEO strategy to react to clients they would have never
+                  reached otherwise.
                 </p>
                 <p>
-                  We are determined in helping small businesses create websites
-                  to get their image out in the online world. Feel free to visit
-                  our portfolio of happy clients and their responsive sites!
+                  Furthermore, having a team of professionals at your disposal
+                  will allow you to attend to other areas of your business while
+                  your online image grows and attract new clients. Feel free to
+                  visit our portfolio of happy clients and their responsive
+                  sites!
                 </p>
 
                 <Link to={`${process.env.PUBLIC_URL}/portfolio`}>

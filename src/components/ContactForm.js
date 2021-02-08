@@ -41,8 +41,8 @@ export default class HireUsForm extends React.Component {
             Have any <span>questions?</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis congue
-            odio diam eu cras augue elit.
+            If you have any questions or would like to get a quote please send
+            us a message.
           </p>
           <form id="hireform" onSubmit={this.handleSubmit}>
             <div class="form__group field">

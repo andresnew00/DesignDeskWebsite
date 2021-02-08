@@ -8,10 +8,12 @@ import Portfolio from "./pages/Portfolio"
 import Maintenance from "./pages/Maintenance"
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         {/* <Maintenance /> */}
         <Route

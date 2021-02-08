@@ -8,6 +8,7 @@ const encode = (data) => {
     .join("&");
 };
 
+// THIS COMPONENT IS NOT IN USE
 export default class HireUsForm extends React.Component {
   constructor(props) {
     super(props);

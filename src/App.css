@@ -193,11 +193,12 @@ body {
 }
 
 .footer-wrapper {
-  background: linear-gradient(100.96deg, #155263 12.3%, #23849f 97.18%);
+  background: #1A6479;
   bottom: 0;
   max-width: 1800px;
   margin: 0 auto;
   padding: 1em;
+  padding-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,25 +208,28 @@ body {
           flex-direction: column;
 }
 
-.footer-wrapper .top-container {
+.footer-wrapper .social-media-logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer-wrapper .top-container .logo {
-  min-width: 8em;
-  max-width: 15em;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  width: 15em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.footer-wrapper .top-container ul {
+.footer-wrapper .linkstopages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 0.5em;
+}
+
+.footer-wrapper .linkstopages ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -237,44 +241,35 @@ body {
       align-self: center;
 }
 
-.footer-wrapper .top-container ul a {
+.footer-wrapper .linkstopages ul a {
   text-decoration: none;
   color: black;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0.6em;
-  font-size: 20px;
+  font-size: 18px;
   border-left: 2px black;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: 500;
 }
 
-.footer-wrapper .top-container ul .currentPage {
-  font-weight: 500;
+.footer-wrapper .linkstopages ul .currentPage {
+  font-weight: 600;
   pointer-events: none;
+  color: white;
   cursor: default;
 }
 
-.footer-wrapper .top-container .social-media-logos {
+.footer-wrapper .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-.footer-wrapper .top-container .social-media-logos .facebook {
-  width: 8em;
-  margin-right: 1em;
-}
-
-.footer-wrapper .top-container .social-media-logos .instagram {
-  width: 7.8em;
-}
-
-.footer-wrapper .copyright {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-weight: 100;
-  font-size: 0.6em;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .rectangle-container {
@@ -647,9 +642,18 @@ body {
   color: #FF9431;
 }
 
+.Services-wrapper ul {
+  text-align: left;
+}
+
 .Services-wrapper p {
   text-align: center;
   line-height: 1.5em;
+  font-size: .9em;
+}
+
+.Services-wrapper .main-p {
+  font-size: 1em;
 }
 
 .Services-wrapper .box-container {
@@ -1322,6 +1326,39 @@ body {
   body {
     font-size: 18px;
   }
+  .footer-wrapper .social-media-logos {
+    width: 10em;
+  }
+}
+
+@media (min-width: 900px) {
+  .barWrapper {
+    padding: 2em;
+  }
+  .barWrapper .content .insideContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: -webkit-center;
+  }
+  .barWrapper .content .leftSide {
+    width: 25%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .barWrapper .content .rightSide {
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 @media (min-width: 800px) {
@@ -1366,9 +1403,10 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    text-align: -webkit-center;
   }
   .barWrapper .content .leftSide {
-    width: 30%;
+    width: 25%;
     -ms-flex-line-pack: center;
         align-content: center;
   }
@@ -1407,31 +1445,6 @@ body {
   }
   .skills .guySEO {
     width: 20em;
-  }
-  .footer-wrapper .top-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    position: relative;
-  }
-  .footer-wrapper .top-container .social-media-logos .facebook {
-    width: 2em;
-  }
-  .footer-wrapper .top-container .social-media-logos .instagram {
-    width: 1.95em;
-  }
-  .footer-wrapper .top-container ul {
-    margin: 0.6em;
-  }
-  .footer-wrapper .copyright {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-left: auto;
   }
   .WhoWeAre .wrapper {
     -webkit-box-pack: space-evenly;
