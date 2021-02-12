@@ -3,6 +3,7 @@
 }
 
 $widthPage: 1800px;
+$color-orange: #FF9931;
 
 button {
   padding: 0;
@@ -944,6 +945,10 @@ body {
 
 // About Components
 .WhoWeAre {
+  span {
+    color: $color-orange;
+  }
+
   .wrapper {
     max-width: $widthPage;
     margin: 0 auto;
@@ -952,14 +957,145 @@ body {
     flex-direction: column;
 
     .table-team {
-      width: 20em;
       align-self: center;
+
+      img {
+        align-self: center;
+      }
     }
 
     .text-section {
       text-align: center;
     }
   }
+}
+
+.ApproachBar-wrapper {
+  max-width: $widthPage;
+  margin: 0 auto;
+  padding: 3em 1em 3em 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #3A7E92;
+  align-items: center;
+
+  h3 {
+    color: #FF9931;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin: 0;
+    margin-top: 0.5em;
+    font-weight: 600;
+  }
+}
+
+.Process-wrapper {
+  max-width: $widthPage;
+  margin: 0 auto;
+  padding: 3em 1em 3em 1em;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: $color-orange;
+  }
+
+  .element {
+    text-align: center;
+  }
+}
+
+.Featured-wrapper {
+  max-width: $widthPage;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: $color-orange;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .image-group {
+    display: flex;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    img {
+      align-self: center;
+
+    }
+
+    #cuchitos {
+      margin-bottom: 3em;
+      margin-right: 1em;
+    }
+  }
+}
+
+.GetInTouch-wrapper {
+  max-width: $widthPage;
+  padding: 5em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .left-side {
+    display: flex;
+    align-items: flex-end;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .right-side {
+    margin-top: 2em;
+
+    p {
+      font-size: 1.5em;
+    }
+  }
+
+  .link2contact {
+    a {
+      margin: 0;
+      font-size: 4em;
+      font-weight: 600;
+      width: 10em;
+      -webkit-text-decoration-color: #FF9931;
+      /* Safari */
+      text-decoration-color: #FF9931;
+
+      color: #000000;
+      text-decoration: none;
+      background-image: linear-gradient(#FF9931, #FF9931),
+        linear-gradient(#FF9931, #FF9931),
+        linear-gradient(#FFC93C, #FFC93C);
+      background-size: 20px 5px, 100% 5px, 0 5px;
+      background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 1s linear, background-position 1s linear;
+    }
+
+    a:hover {
+      cursor: pointer;
+      background-size: 20px 5px, 0 5px, 100% 5px;
+      background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+    }
+  }
+
+
 }
 
 // Portfolio Components
@@ -1160,10 +1296,81 @@ body {
       }
     }
   }
+
+}
+
+@media (min-width: 1100px) {
+  .Featured-wrapper {
+    .image-group {
+      display: flex;
+      flex-direction: row;
+      place-content: center;
+
+      #cuchitos {
+        margin-bottom: 0em;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .GetInTouch-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .right-side {
+      margin: 0;
+      width: 50%;
+    }
+
+    .left-side {
+      width: 50%;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .WhoWeAre {
+    .wrapper {
+      justify-content: space-evenly;
+      flex-direction: row;
+
+      .table-team {
+        width: 80em;
+      }
+
+      .text-section {
+        margin-left: 1em;
+        text-align: left;
+      }
+    }
+  }
+
+  .Process-wrapper {
+    max-width: $widthPage;
+
+    .element {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+    }
+
+    #right {
+      flex-direction: row-reverse;
+    }
+
+    #center {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }
 
 
 @media (min-width: 800px) {
+
   .why-wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -1258,22 +1465,6 @@ body {
   //     margin-left: auto;
   //   }
   // }
-
-  .WhoWeAre {
-    .wrapper {
-      justify-content: space-evenly;
-      flex-direction: row;
-
-      .table-team {
-        width: 80em;
-      }
-
-      .text-section {
-        margin-left: 1em;
-        text-align: left;
-      }
-    }
-  }
 
   .CompanyInfo-wrapper {
     flex-direction: row;

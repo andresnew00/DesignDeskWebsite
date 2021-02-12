@@ -1106,6 +1106,10 @@ body {
       align-self: center;
 }
 
+.WhoWeAre span {
+  color: #FF9931;
+}
+
 .WhoWeAre .wrapper {
   max-width: 1800px;
   margin: 0 auto;
@@ -1120,7 +1124,12 @@ body {
 }
 
 .WhoWeAre .wrapper .table-team {
-  width: 20em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.WhoWeAre .wrapper .table-team img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1128,6 +1137,163 @@ body {
 
 .WhoWeAre .wrapper .text-section {
   text-align: center;
+}
+
+.ApproachBar-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 3em 1em 3em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3A7E92;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ApproachBar-wrapper h3 {
+  color: #FF9931;
+  margin: 0;
+  font-weight: 500;
+}
+
+.ApproachBar-wrapper h2 {
+  font-size: 3em;
+  margin: 0;
+  margin-top: 0.5em;
+  font-weight: 600;
+}
+
+.Process-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 3em 1em 3em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Process-wrapper span {
+  color: #FF9931;
+}
+
+.Process-wrapper .element {
+  text-align: center;
+}
+
+.Featured-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Featured-wrapper span {
+  color: #FF9931;
+}
+
+.Featured-wrapper h2 {
+  font-size: 3em;
+}
+
+.Featured-wrapper .image-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Featured-wrapper .image-group img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Featured-wrapper .image-group #cuchitos {
+  margin-bottom: 3em;
+  margin-right: 1em;
+}
+
+.GetInTouch-wrapper {
+  max-width: 1800px;
+  padding: 5em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.GetInTouch-wrapper .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.GetInTouch-wrapper .left-side p {
+  margin: 0;
+}
+
+.GetInTouch-wrapper .right-side {
+  margin-top: 2em;
+}
+
+.GetInTouch-wrapper .right-side p {
+  font-size: 1.5em;
+}
+
+.GetInTouch-wrapper .link2contact a {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 600;
+  width: 10em;
+  -webkit-text-decoration-color: #FF9931;
+  /* Safari */
+  text-decoration-color: #FF9931;
+  color: #000000;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF9931), to(#FF9931)), -webkit-gradient(linear, left top, left bottom, from(#FF9931), to(#FF9931)), -webkit-gradient(linear, left top, left bottom, from(#FFC93C), to(#FFC93C));
+  background-image: linear-gradient(#FF9931, #FF9931), linear-gradient(#FF9931, #FF9931), linear-gradient(#FFC93C, #FFC93C);
+  background-size: 20px 5px, 100% 5px, 0 5px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: background-size 1s linear, background-position 1s linear;
+  transition: background-size 1s linear, background-position 1s linear;
+}
+
+.GetInTouch-wrapper .link2contact a:hover {
+  cursor: pointer;
+  background-size: 20px 5px, 0 5px, 100% 5px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
 }
 
 .banner-wrapper {
@@ -1361,6 +1527,88 @@ body {
   }
 }
 
+@media (min-width: 1100px) {
+  .Featured-wrapper .image-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    place-content: center;
+  }
+  .Featured-wrapper .image-group #cuchitos {
+    margin-bottom: 0em;
+    margin-right: 1em;
+  }
+  .GetInTouch-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .GetInTouch-wrapper .right-side {
+    margin: 0;
+    width: 50%;
+  }
+  .GetInTouch-wrapper .left-side {
+    width: 50%;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .WhoWeAre .wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .WhoWeAre .wrapper .table-team {
+    width: 80em;
+  }
+  .WhoWeAre .wrapper .text-section {
+    margin-left: 1em;
+    text-align: left;
+  }
+  .Process-wrapper {
+    max-width: 1800px;
+  }
+  .Process-wrapper .element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+  .Process-wrapper #right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .Process-wrapper #center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 @media (min-width: 800px) {
   .why-wrapper {
     -webkit-box-orient: horizontal;
@@ -1445,22 +1693,6 @@ body {
   }
   .skills .guySEO {
     width: 20em;
-  }
-  .WhoWeAre .wrapper {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .WhoWeAre .wrapper .table-team {
-    width: 80em;
-  }
-  .WhoWeAre .wrapper .text-section {
-    margin-left: 1em;
-    text-align: left;
   }
   .CompanyInfo-wrapper {
     -webkit-box-orient: horizontal;
