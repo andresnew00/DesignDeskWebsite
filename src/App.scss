@@ -404,6 +404,10 @@ body {
     color: #FF9431;
   }
 
+  #imagemain {
+    align-self: center;
+  }
+
   // Rectangles on top of each other
   .rectangle-container {
     position: relative;
@@ -739,7 +743,7 @@ body {
 }
 
 .Contact-wrapper {
-  max-width: $widthPage;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -949,6 +953,10 @@ body {
     color: $color-orange;
   }
 
+  p {
+    line-height: 1.5em;
+  }
+
   .wrapper {
     max-width: $widthPage;
     margin: 0 auto;
@@ -991,6 +999,10 @@ body {
     margin-top: 0.5em;
     font-weight: 600;
   }
+
+  p {
+    line-height: 1.5em;
+  }
 }
 
 .Process-wrapper {
@@ -1006,6 +1018,13 @@ body {
 
   .element {
     text-align: center;
+    h2 {
+      text-transform: capitalize;
+    }
+  }
+
+  p {
+    line-height: 1.5em;
   }
 }
 
@@ -1015,6 +1034,10 @@ body {
   padding: 1em;
   display: flex;
   flex-direction: column;
+
+  p {
+    line-height: 1.5em;
+  }
 
   span {
     color: $color-orange;
@@ -1064,6 +1087,7 @@ body {
 
     p {
       font-size: 1.5em;
+      line-height: 1.5em;
     }
   }
 
@@ -1139,7 +1163,6 @@ body {
   flex-direction: column;
 
   .conversation-wrapper {
-    width: 20em;
     align-self: center;
   }
 }
@@ -1274,6 +1297,13 @@ body {
 }
 
 @media (min-width: 900px) {
+  .CompanyInfo-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+
+
   .barWrapper {
     padding: 2em;
 
@@ -1297,6 +1327,17 @@ body {
     }
   }
 
+  .Contact-wrapper {
+    flex-direction: row;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .why-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -1371,21 +1412,12 @@ body {
 
 @media (min-width: 800px) {
 
-  .why-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .Services-wrapper {
     .box-container {
       display: flex;
       justify-content: center;
       flex-direction: row;
     }
-  }
-
-  .Contact-wrapper {
-    flex-direction: row;
   }
 
   .barWrapper {
@@ -1465,17 +1497,6 @@ body {
   //     margin-left: auto;
   //   }
   // }
-
-  .CompanyInfo-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-
-    .conversation-wrapper {
-      width: 20em;
-      margin-left: 1em;
-    }
-  }
-
   .Websites-wrapper {
     max-width: 1200px;
     margin: 0 auto;

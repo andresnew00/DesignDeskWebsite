@@ -37,9 +37,7 @@ function WhyUs() {
           )}
         </Spring>
       </div>
-      <div className="computer-girls-img">
-        <ComputerGirls />
-      </div>
+      <img src={require(`../assets/Teampresentation.png`)} id="imagemain"/>
     </div>
   );
 }

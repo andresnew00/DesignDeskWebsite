@@ -12,10 +12,9 @@ export default function GetInTouch() {
         </div>
       </div>
       <div className="right-side">
-        <p> Porta id vitae integer ultrices
-          egestas. Porta id vitae integer ultrices egestas. Porta id vitae
-          integer ultrices egestas. Porta id vitae integer ultrices egestas.
+        <p> <i>"Design is not what it looks and feels like, design is how it works."</i>
         </p>
+        <p><b>-Steve Jobs</b></p>
       </div>
     </div>
   );

@@ -95,9 +95,7 @@ export default class HireUsForm extends React.Component {
           </form>
         </div>
         <div className="right-wrapper">
-          <div className="coffee-guys">
-            <GuysWCoffee />
-          </div>
+          <img src={require(`../assets/Conversation.png`)}/>
         </div>
       </div>
     );

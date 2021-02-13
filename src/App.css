@@ -484,6 +484,12 @@ body {
   color: #FF9431;
 }
 
+.why-wrapper #imagemain {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .why-wrapper .rectangle-container {
   position: relative;
   width: 90%;
@@ -865,7 +871,7 @@ body {
 }
 
 .Contact-wrapper {
-  max-width: 1800px;
+  max-width: 1500px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1110,6 +1116,10 @@ body {
   color: #FF9931;
 }
 
+.WhoWeAre p {
+  line-height: 1.5em;
+}
+
 .WhoWeAre .wrapper {
   max-width: 1800px;
   margin: 0 auto;
@@ -1169,6 +1179,10 @@ body {
   font-weight: 600;
 }
 
+.ApproachBar-wrapper p {
+  line-height: 1.5em;
+}
+
 .Process-wrapper {
   max-width: 1800px;
   margin: 0 auto;
@@ -1190,6 +1204,14 @@ body {
   text-align: center;
 }
 
+.Process-wrapper .element h2 {
+  text-transform: capitalize;
+}
+
+.Process-wrapper p {
+  line-height: 1.5em;
+}
+
 .Featured-wrapper {
   max-width: 1800px;
   margin: 0 auto;
@@ -1201,6 +1223,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.Featured-wrapper p {
+  line-height: 1.5em;
 }
 
 .Featured-wrapper span {
@@ -1269,6 +1295,7 @@ body {
 
 .GetInTouch-wrapper .right-side p {
   font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 .GetInTouch-wrapper .link2contact a {
@@ -1342,7 +1369,6 @@ body {
 }
 
 .CompanyInfo-wrapper .conversation-wrapper {
-  width: 20em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1498,6 +1524,15 @@ body {
 }
 
 @media (min-width: 900px) {
+  .CompanyInfo-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .barWrapper {
     padding: 2em;
   }
@@ -1524,6 +1559,24 @@ body {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .Contact-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .why-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1610,15 +1663,6 @@ body {
 }
 
 @media (min-width: 800px) {
-  .why-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .Services-wrapper .box-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1626,12 +1670,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .Contact-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1693,19 +1731,6 @@ body {
   }
   .skills .guySEO {
     width: 20em;
-  }
-  .CompanyInfo-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .CompanyInfo-wrapper .conversation-wrapper {
-    width: 20em;
-    margin-left: 1em;
   }
   .Websites-wrapper {
     max-width: 1200px;
