@@ -986,6 +986,7 @@ body {
   flex-direction: column;
   background-color: #3A7E92;
   align-items: center;
+  text-align: center;
 
   h3 {
     color: #FF9931;
@@ -1643,6 +1644,28 @@ body {
 
   .hero-wrapper .main-text {
     font-size: 2em;
+  }
+}
+
+@media (min-width: 270px) and (max-width: 536px) {
+  img {
+    max-width: 16em;
+    height: auto;
+  }
+  .GetInTouch-wrapper {
+    padding: 2em;
+  }
+  .footer-wrapper .linkstopages ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-wrapper .linkstopages ul li {
+    margin-bottom: 0.5em;
+  }
+  .rectangle-container .info-rectangle .left-side h1,
+  .rectangle-container .info-rectangle .right-side h1 {
+    font-size: 0.8em;
   }
 }
 

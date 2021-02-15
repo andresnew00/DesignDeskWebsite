@@ -1164,6 +1164,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .ApproachBar-wrapper h3 {
@@ -1893,6 +1894,35 @@ body {
   }
   .hero-wrapper .main-text {
     font-size: 2em;
+  }
+}
+
+@media (min-width: 270px) and (max-width: 536px) {
+  img {
+    max-width: 16em;
+    height: auto;
+  }
+  .GetInTouch-wrapper {
+    padding: 2em;
+  }
+  .footer-wrapper .linkstopages ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-wrapper .linkstopages ul li {
+    margin-bottom: 0.5em;
+  }
+  .rectangle-container .info-rectangle .left-side h1,
+  .rectangle-container .info-rectangle .right-side h1 {
+    font-size: 0.8em;
   }
 }
 
