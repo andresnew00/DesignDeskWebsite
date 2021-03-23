@@ -99,6 +99,11 @@ function Footer() {
               <Link to={`${process.env.PUBLIC_URL}/portfolio`}>Portfolio</Link>
             </li>
           )}
+          <li>
+            <a target="_blank" href="https://blog.designdesk.tech">
+              Blog
+            </a>
+          </li>
         </ul>
       </div>
       <div className="copyright">

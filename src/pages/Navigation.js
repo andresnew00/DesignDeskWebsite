@@ -32,6 +32,9 @@ export default function Navigation(props) {
           <li>
             <Link to={`${process.env.PUBLIC_URL}/contact`}>Contact Us</Link>
           </li>
+          <li>
+            <a target="_blank" href="https://blog.designdesk.tech">Blog</a>
+          </li>
         </ul>
       </div>
     </div>

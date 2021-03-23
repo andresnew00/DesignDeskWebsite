@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbf16f1b.chunk.css",
-    "main.js": "/static/js/main.b8a4af46.chunk.js",
-    "main.js.map": "/static/js/main.b8a4af46.chunk.js.map",
+    "main.css": "/static/css/main.7fc27c9f.chunk.css",
+    "main.js": "/static/js/main.83720d36.chunk.js",
+    "main.js.map": "/static/js/main.83720d36.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d8ec7541.js",
     "runtime-main.js.map": "/static/js/runtime-main.d8ec7541.js.map",
-    "static/js/2.54c5bced.chunk.js": "/static/js/2.54c5bced.chunk.js",
-    "static/js/2.54c5bced.chunk.js.map": "/static/js/2.54c5bced.chunk.js.map",
+    "static/js/2.eba2c671.chunk.js": "/static/js/2.eba2c671.chunk.js",
+    "static/js/2.eba2c671.chunk.js.map": "/static/js/2.eba2c671.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.753c02fef41b72b29d80f46736f681e5.js": "/precache-manifest.753c02fef41b72b29d80f46736f681e5.js",
+    "precache-manifest.b05888add59a48392e092dc1b1a9622b.js": "/precache-manifest.b05888add59a48392e092dc1b1a9622b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fbf16f1b.chunk.css.map": "/static/css/main.fbf16f1b.chunk.css.map",
-    "static/js/2.54c5bced.chunk.js.LICENSE.txt": "/static/js/2.54c5bced.chunk.js.LICENSE.txt",
+    "static/css/main.7fc27c9f.chunk.css.map": "/static/css/main.7fc27c9f.chunk.css.map",
+    "static/js/2.eba2c671.chunk.js.LICENSE.txt": "/static/js/2.eba2c671.chunk.js.LICENSE.txt",
     "static/media/Consulting_Flatline1.png": "/static/media/Consulting_Flatline1.5df894bc.png",
     "static/media/Conversation.png": "/static/media/Conversation.c611efa9.png",
     "static/media/Designer_Flatline.png": "/static/media/Designer_Flatline.e03fe501.png",
     "static/media/DoctortiresfinalCopy.png": "/static/media/DoctortiresfinalCopy.d384f71f.png",
     "static/media/InstagramFrame.png": "/static/media/InstagramFrame.d5dd4cad.png",
+    "static/media/Instagrampost-pdfsnake.png": "/static/media/Instagrampost-pdfsnake.1d468d97.png",
     "static/media/MobileTesting_Flatline.png": "/static/media/MobileTesting_Flatline.2acc618c.png",
     "static/media/Onlineresearch_Flatline.png": "/static/media/Onlineresearch_Flatline.85645aa3.png",
     "static/media/Searchengine_Flatline1.png": "/static/media/Searchengine_Flatline1.10324dbb.png",
@@ -49,8 +50,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d8ec7541.js",
-    "static/js/2.54c5bced.chunk.js",
-    "static/css/main.fbf16f1b.chunk.css",
-    "static/js/main.b8a4af46.chunk.js"
+    "static/js/2.eba2c671.chunk.js",
+    "static/css/main.7fc27c9f.chunk.css",
+    "static/js/main.83720d36.chunk.js"
   ]
 }
