@@ -9,10 +9,10 @@ export default function PortfolioWebsites() {
     return (
         <div className="Websites-wrapper">
             {/* add new projects here by adding title, link and image to a new portfolioItem */}
-            <PortfolioItem title="Sunshade Interiors" link={"https://sunshadeinteriors.com/"} image={instagramimg} />
-            <PortfolioItem title="B&V Home Maintenance" link={"http://www.bandvhomemaintenance.com/"} image={instagramimg2} />
-            <PortfolioItem title="Doctor Tires" link={"https://doctortires.com/"} image={instagramimg3} />
-            <PortfolioItem title="PDFSnake" link={"https://pdfsnake.app/"} image={instagramimg4} />
+            <PortfolioItem title="Sunshade Interiors" link={"https://blog.designdesk.tech/sunshade-interiors/"} image={instagramimg} />
+            <PortfolioItem title="B&V Home Maintenance" link={""} image={instagramimg2} />
+            <PortfolioItem title="Doctor Tires" link={"https://blog.designdesk.tech/doctor-tires/"} image={instagramimg3} />
+            <PortfolioItem title="PDFSnake" link={"https://blog.designdesk.tech/pdfsnake/"} image={instagramimg4} />
         </div>
     )
 }

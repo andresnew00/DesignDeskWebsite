@@ -24,7 +24,7 @@ function Footer() {
         </div>
         <div className="instagram">
           <a
-            href="https://www.instagram.com/inciarte_development/?hl=en"
+            href="https://www.instagram.com/design_desk_websites/?igshid=17s4607wqquz3"
             target="_blank"
             title="Instagram"
           >
