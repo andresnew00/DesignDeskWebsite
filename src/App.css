@@ -206,6 +206,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* Shrink for footer icons*/
 }
 
 .footer-wrapper .social-media-logos {
@@ -218,6 +219,29 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer-wrapper .hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.footer-wrapper .hvr-shrink:hover,
+.footer-wrapper .hvr-shrink:focus,
+.footer-wrapper .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .footer-wrapper .linkstopages {
@@ -258,6 +282,10 @@ body {
   pointer-events: none;
   color: white;
   cursor: default;
+}
+
+.footer-wrapper .linkstopages li :hover {
+  color: #ff9a3c;
 }
 
 .footer-wrapper .copyright {

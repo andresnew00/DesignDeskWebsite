@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className="footer-wrapper">
       <div className="social-media-logos">
-        <div className="facebook">
+        <div className="facebook hvr-shrink">
           <a
             href="https://www.facebook.com/Design-Desk-109023230918615"
             target="_blank"
@@ -22,7 +22,7 @@ function Footer() {
             />
           </a>
         </div>
-        <div className="instagram">
+        <div className="instagram hvr-shrink">
           <a
             href="https://www.instagram.com/design_desk_websites/?igshid=17s4607wqquz3"
             target="_blank"
@@ -34,7 +34,7 @@ function Footer() {
             />
           </a>
         </div>
-        <div className="github">
+        <div className="github hvr-shrink">
           <a
             href="https://github.com/andresnew00"
             target="_blank"
