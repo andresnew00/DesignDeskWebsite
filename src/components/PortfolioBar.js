@@ -1,10 +1,12 @@
 import React from "react";
-import instagramimg from "../assets/InstagramFrame.png";
-import instagramimg2 from "../assets/instagram-img2.jpg";
+import instagramimg3 from "../assets/doctortires.png";
+import instagramimg4 from "../assets/Instagrampost-pdfsnake.png";
+import instagramimg5 from "../assets/Ecoturf post - 26.png";
+import instagramimg6 from "../assets/Instagram post - 23.png";
 import CrossfadeImage from "react-crossfade-image";
 import { Link } from "react-router-dom";
 
-const images = [instagramimg, instagramimg2];
+const images = [instagramimg3, instagramimg4, instagramimg5, instagramimg6];
 
 export default class PortfolioBar extends React.Component {
   constructor() {
